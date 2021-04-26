@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yann Ryan</title>
+    <link>https://yann-ryan.github.io/author/yann-ryan/</link>
+      <atom:link href="https://yann-ryan.github.io/author/yann-ryan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yann Ryan</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://yann-ryan.github.io/author/yann-ryan/avatar_hu713a061e87ca64ca6791eedb99a2c607_62176_270x270_fill_q75_lanczos_center.jpeg</url>
+      <title>Yann Ryan</title>
+      <link>https://yann-ryan.github.io/author/yann-ryan/</link>
+    </image>
+    
+    <item>
+      <title>Converting the British Library’s Catalogue of British and Irish Newspapers into a Public Domain Dataset: Processes and Applications</title>
+      <link>https://yann-ryan.github.io/publication/title-list/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/publication/title-list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Networking Archives: Quantitative History and the Contingent Archive</title>
+      <link>https://yann-ryan.github.io/publication/robustness-paper/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/publication/robustness-paper/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Create your slides in Markdown - click the &lt;em&gt;Slides&lt;/em&gt; button to check out the example.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Supplementary notes can be added here, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code, math, and images&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How the World Jogges: Interconnectedness Modularity and Virality in Seventeenth Century News</title>
+      <link>https://yann-ryan.github.io/publication/world-jogges/</link>
+      <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/publication/world-jogges/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>More Difficult from Dublin than from Dieppe’: Ireland and Britain in a European Network of Communication</title>
+      <link>https://yann-ryan.github.io/publication/journal-article/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/publication/journal-article/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

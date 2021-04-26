@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network Analysis | Yann Ryan</title>
+    <link>https://yann-ryan.github.io/tag/network-analysis/</link>
+      <atom:link href="https://yann-ryan.github.io/tag/network-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Network Analysis</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://yann-ryan.github.io/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_512x512_fill_lanczos_center_2.png</url>
+      <title>Network Analysis</title>
+      <link>https://yann-ryan.github.io/tag/network-analysis/</link>
+    </image>
+    
+    <item>
+      <title>State Papers Visual Search</title>
+      <link>https://yann-ryan.github.io/project/visual-search/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/project/visual-search/</guid>
+      <description>&lt;p&gt;This application is designed as a way to make searching through a very large mass of documents (the 170,000 letters of the Stuart State Papers) for relevant results easier. Users can enter a keyword in the search bar, which displays a small bar chart of &amp;lsquo;hits&amp;rsquo; for that term per year.&lt;/p&gt;
+&lt;p&gt;Clicking and dragging on a year range on that bar chart displays geographic hits, for that period, in a miniature map in another window. Finally, the user draws a shape (either a polygon or rectangle) on the map, which displays all letters with the selected parameters as a network diagram in the main viewing pane.&lt;/p&gt;
+&lt;p&gt;Clicking on an &amp;lsquo;edge&amp;rsquo; (a line denoting a letter sent between two individuals) displays all the relevant letters in date order, along with their brief descriptions from the Calendars of State Papers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Temporal Clusters Browswer</title>
+      <link>https://yann-ryan.github.io/project/temporal-clusters/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/project/temporal-clusters/</guid>
+      <description>&lt;p&gt;This application was built as a UI layer on top of the results of an algorithm developed by Sebastian Ahnert to detect the presence of short-term temporal clusters in network data.&lt;/p&gt;
+&lt;p&gt;The application displays all of the detected clusters on an interactive timeline, built using R and Plotly. Clicking on a cluster in the timeline displays an interactive network diagram in a separate pane.&lt;/p&gt;
+&lt;p&gt;The application also lists the letters belonging to the cluster in order, alongside links to the relevant manuscript images in State Papers Online (if these are available internally). It&amp;rsquo;s also possible to filter the timeline by keyword or individual.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Screen%20Shot%202021-04-26%20at%2011.15.06.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;Screen%20Shot%202021-04-26%20at%2011.15.26.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

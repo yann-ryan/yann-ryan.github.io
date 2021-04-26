@@ -1,15 +1,15 @@
 {
-  "name": "Academic",
-  "short_name": "Academic",
+  "name": "Yann Ryan",
+  "short_name": "Yann Ryan",
   "lang": "en-us",
-  "theme_color": "#1565c0",
-  "background_color": "#1565c0",
+  "theme_color": "#707070",
+  "background_color": "#707070",
   "icons": [{
-    "src": "/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_192x192_fill_lanczos_center_2.png",
+    "src": "/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_192x192_fill_lanczos_center_2.png",
     "sizes": "192x192",
     "type": "image/png"
     }, {
-    "src": "/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png",
+    "src": "/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_512x512_fill_lanczos_center_2.png",
     "sizes": "512x512",
     "type": "image/png"
      }],

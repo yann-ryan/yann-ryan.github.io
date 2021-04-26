@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>publication | Yann Ryan</title>
+    <link>https://yann-ryan.github.io/tag/publication/</link>
+      <atom:link href="https://yann-ryan.github.io/tag/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>publication</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://yann-ryan.github.io/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_512x512_fill_lanczos_center_2.png</url>
+      <title>publication</title>
+      <link>https://yann-ryan.github.io/tag/publication/</link>
+    </image>
+    
+    <item>
+      <title>Converting the British Library’s Catalogue of British and Irish Newspapers into a Public Domain Dataset: Processes and Applications</title>
+      <link>https://yann-ryan.github.io/publication/title-list/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/publication/title-list/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

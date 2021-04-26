@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Networks | Yann Ryan</title>
+    <link>https://yann-ryan.github.io/tag/networks/</link>
+      <atom:link href="https://yann-ryan.github.io/tag/networks/index.xml" rel="self" type="application/rss+xml" />
+    <description>Networks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 21 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://yann-ryan.github.io/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_512x512_fill_lanczos_center_2.png</url>
+      <title>Networks</title>
+      <link>https://yann-ryan.github.io/tag/networks/</link>
+    </image>
+    
+    <item>
+      <title>More Difficult from Dublin than from Dieppe’: Ireland and Britain in a European Network of Communication</title>
+      <link>https://yann-ryan.github.io/publication/journal-article/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/publication/journal-article/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
