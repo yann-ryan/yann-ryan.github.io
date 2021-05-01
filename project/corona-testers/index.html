@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Research Fellow, &lt;a href = &#39;https://networkingarchives.org/&#39;&gt;Networking Archives&lt;/a&gt; Project" />
+  <meta name="description" content="This page takes the list of providers for 2 and 8 day corona tests as found [here](https://www.gov.uk/guidance/providers-of-day-2-and-day-8-coronavirus-testing-for-international-arrivals) and converts it into a simple dashboard. Use the sliders and selecter to filter the table to a preferred range of providers. Made using R, particularly rvest and crosstalk. Brief code tutorial available soon!" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://yann-ryan.github.io/project/" />
+  <link rel="alternate" hreflang="en-us" href="https://yann-ryan.github.io/project/corona-testers/" />
 
   
 
@@ -265,8 +265,6 @@
   
 
   
-    <link rel="alternate" href="/project/index.xml" type="application/rss+xml" title="Yann Ryan" />
-  
 
   
     <link rel="manifest" href="/index.webmanifest" />
@@ -275,7 +273,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_32x32_fill_lanczos_center_2.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="https://yann-ryan.github.io/project/" />
+  <link rel="canonical" href="https://yann-ryan.github.io/project/corona-testers/" />
 
   
   
@@ -286,39 +284,89 @@
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Yann Ryan" />
-  <meta property="og:url" content="https://yann-ryan.github.io/project/" />
-  <meta property="og:title" content="Projects | Yann Ryan" />
-  <meta property="og:description" content="Research Fellow, &lt;a href = &#39;https://networkingarchives.org/&#39;&gt;Networking Archives&lt;/a&gt; Project" /><meta property="og:image" content="https://yann-ryan.github.io/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_512x512_fill_lanczos_center_2.png" />
-    <meta property="twitter:image" content="https://yann-ryan.github.io/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="https://yann-ryan.github.io/project/corona-testers/" />
+  <meta property="og:title" content="UK Coronavirus Test Providers Dashboard | Yann Ryan" />
+  <meta property="og:description" content="This page takes the list of providers for 2 and 8 day corona tests as found [here](https://www.gov.uk/guidance/providers-of-day-2-and-day-8-coronavirus-testing-for-international-arrivals) and converts it into a simple dashboard. Use the sliders and selecter to filter the table to a preferred range of providers. Made using R, particularly rvest and crosstalk. Brief code tutorial available soon!" /><meta property="og:image" content="https://yann-ryan.github.io/project/corona-testers/featured.png" />
+    <meta property="twitter:image" content="https://yann-ryan.github.io/project/corona-testers/featured.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2021-02-05T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2020-10-27T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2020-10-27T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://yann-ryan.github.io/project/corona-testers/"
+  },
+  "headline": "UK Coronavirus Test Providers Dashboard",
+  
+  "image": [
+    "https://yann-ryan.github.io/project/corona-testers/featured.png"
+  ],
+  
+  "datePublished": "2020-10-27T00:00:00Z",
+  "dateModified": "2020-10-27T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Yann Ryan"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yann Ryan",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://yann-ryan.github.io/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "This page takes the list of providers for 2 and 8 day corona tests as found [here](https://www.gov.uk/guidance/providers-of-day-2-and-day-8-coronavirus-testing-for-international-arrivals) and converts it into a simple dashboard. Use the sliders and selecter to filter the table to a preferred range of providers. Made using R, particularly rvest and crosstalk. Brief code tutorial available soon!"
+}
+</script>
+
+  
+
+  
+
   
 
   
 
 
 
-  
-
-  
 
 
-
-
-
-  <title>Projects | Yann Ryan</title>
+  <title>UK Coronavirus Test Providers Dashboard | Yann Ryan</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a4fd04f91548844de4f26ff6381a5b5e" >
 
   
   
@@ -660,6 +708,133 @@
   </div>
 
   <div class="page-body">
+    <article class="article article-project">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>UK Coronavirus Test Providers Dashboard</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Oct 27, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  <a class="btn btn-outline-primary my-1" href="https://yann-ryan.github.io/coronatests" target="_blank" rel="noopener">Go to Project Site</a>
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 589px;">
+  <div style="position: relative">
+    <img src="/project/corona-testers/featured_hu1463f1302520dd9d681114308c826780_194563_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    <span class="article-header-caption">Photo by Toa Heftiba on Unsplash</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+    </div>
+
     
 
 
@@ -667,116 +842,254 @@
 
 
 
-
-
-
-
-
-
+<div class="article-tags">
   
-
-  
-  
-  
-    
-  
-<div class="universal-wrapper pt-3">
-  <h1>Projects</h1>
-
-  
-
+  <a class="badge badge-light" href="/tag/helpers/">helpers</a>
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
-
-  
-  
-    
-    
-    
-    <div>
-      <h2><a href="/project/real-or-fake-news/" >Real or Fake News?</a></h2>
-      <div class="article-style">
-        
-          Shiny application buily to visualise temporal clusters in the State Papers network
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/project/ship-paths/" >Ship Itineraries</a></h2>
-      <div class="article-style">
-        
-          Browse and visualise ship itineraries measured with a shortest-path algorithm.
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/project/visual-search/" >State Papers Visual Search</a></h2>
-      <div class="article-style">
-        
-          Shiny application built to navigate through the State Papers by time, location and date.
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/project/temporal-clusters/" >Temporal Clusters Browswer</a></h2>
-      <div class="article-style">
-        
-          Shiny application buily to visualise temporal clusters in the State Papers network
-        
-      </div>
-    </div>
-  
-    
-    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
     
       
       
-    
-    <div>
-      <h2><a href="https://networkingarchives.shinyapps.io/spo_reference_creator/" target="_blank" rel="noopener">State Papers Online Reference Creator</a></h2>
-      <div class="article-style">
+      
         
-          A very simple application - paste an English State Papers reference, and receive a correctly formatted reference.
-        
-      </div>
-    </div>
-  
-    
-    
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://yann-ryan.github.io/project/corona-testers/&amp;text=UK%20Coronavirus%20Test%20Providers%20Dashboard" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
       
       
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://yann-ryan.github.io/project/corona-testers/&amp;t=UK%20Coronavirus%20Test%20Providers%20Dashboard" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
     
-    <div>
-      <h2><a href="https://yann-ryan.github.io/coronatests" target="_blank" rel="noopener">UK Coronavirus Test Providers Dashboard</a></h2>
-      <div class="article-style">
+      
+      
+      
         
-          This page takes the list of providers for 2 and 8 day corona tests as found [here](https://www.gov.uk/guidance/providers-of-day-2-and-day-8-coronavirus-testing-for-international-arrivals) and converts it into a simple dashboard. Use the sliders and selecter to filter the table to a preferred range of providers. Made using R, particularly rvest and crosstalk. Brief code tutorial available soon!
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=UK%20Coronavirus%20Test%20Providers%20Dashboard&amp;body=https://yann-ryan.github.io/project/corona-testers/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
         
-      </div>
-    </div>
-  
-
-  
-
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://yann-ryan.github.io/project/corona-testers/&amp;title=UK%20Coronavirus%20Test%20Providers%20Dashboard" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=UK%20Coronavirus%20Test%20Providers%20Dashboard%20https://yann-ryan.github.io/project/corona-testers/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://yann-ryan.github.io/project/corona-testers/&amp;title=UK%20Coronavirus%20Test%20Providers%20Dashboard" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://yann-ryan.github.io/"><img class="avatar mr-3 avatar-circle" src="/author/yann-ryan/avatar_hu713a061e87ca64ca6791eedb99a2c607_62176_270x270_fill_q75_lanczos_center.jpeg" alt="Yann Ryan"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://yann-ryan.github.io/">Yann Ryan</a></h5>
+      <h6 class="card-subtitle">Research Fellow, <a href = 'https://networkingarchives.org/'>Networking Archives</a> Project</h6>
+      <p class="card-text">I’ve been at Queen Mary, University of London since 2014 and recently completed a PhD in the history of early modern news.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/lievesofgrass" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=Waz1Fk0AAAAJ" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/networkingarchives" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/project/external-project/">State Papers Online Reference Creator</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+    <div class="project-related-pages content-widget-hr">
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+
+      
+      
+      
+    </div>
+  </div>
+</article>
   </div>
 
   <div class="page-footer">

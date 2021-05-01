@@ -1694,6 +1694,14 @@ james_network = spo_raw %&amp;gt;% filter(X1 %in% spo_ids$id &amp;amp; X2 %in% s
     </item>
     
     <item>
+      <title>UK Coronavirus Test Providers Dashboard</title>
+      <link>https://yann-ryan.github.io/project/corona-testers/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/project/corona-testers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>How the World Jogges: Interconnectedness Modularity and Virality in Seventeenth Century News</title>
       <link>https://yann-ryan.github.io/publication/world-jogges/</link>
       <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
