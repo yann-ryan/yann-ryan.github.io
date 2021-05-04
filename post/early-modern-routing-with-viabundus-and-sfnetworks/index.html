@@ -806,7 +806,9 @@
   <div class="article-container">
 
     <div class="article-style">
-      <script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/htmlwidgets/htmlwidgets.js"></script>
+      <script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/kePrint/kePrint.js"></script>
+<link href="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/lightable/lightable.css" rel="stylesheet" />
+<script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/htmlwidgets/htmlwidgets.js"></script>
 <script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/jquery/jquery.min.js"></script>
 <link href="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/leaflet/leaflet.css" rel="stylesheet" />
 <script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/leaflet/leaflet.js"></script>
@@ -815,6 +817,12 @@
 <script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/Proj4Leaflet/proj4leaflet.js"></script>
 <link href="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
 <script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/leaflet-binding/leaflet.js"></script>
+<script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/kePrint/kePrint.js"></script>
+<link href="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/lightable/lightable.css" rel="stylesheet" />
+<script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/kePrint/kePrint.js"></script>
+<link href="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/lightable/lightable.css" rel="stylesheet" />
+<script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/kePrint/kePrint.js"></script>
+<link href="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/lightable/lightable.css" rel="stylesheet" />
 <script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/htmlwidgets/htmlwidgets.js"></script>
 <script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/jquery/jquery.min.js"></script>
 <link href="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/leaflet/leaflet.css" rel="stylesheet" />
@@ -901,7 +909,7 @@ sf_net
 <h1 id="network-calculations">Network Calculations</h1>
 <p>This new object can be used to calculate regular network analysis metrics, such as betweenness centrality, using the same set of functions as <code>tidygraph</code>:</p>
 <pre><code class="language-r">library(tidygraph)
-
+library(kableExtra)
 betweenness_scores = sf_net %&gt;% 
   activate(nodes) %&gt;% 
   mutate(betweenness = centrality_betweenness(weights = NULL)) %&gt;% 
@@ -909,33 +917,105 @@ betweenness_scores = sf_net %&gt;%
   arrange(desc(betweenness)) %&gt;% 
   filter(Is_Town == 'y') %&gt;% head(10)
 
-betweenness_scores %&gt;% st_drop_geometry() 
+betweenness_scores %&gt;% st_drop_geometry() %&gt;% select(Name, betweenness) %&gt;% kbl(caption = &quot;Nodes with highest betweenness scores:&quot;)
 </code></pre>
-<pre><code>## # A tibble: 10 x 44
-##       ID Parent_ID Name  Alternative_Name Geonames_ID Ready Is_Settlement
-##  * &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;                  &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;        
-##  1  8515        NA Witt… &lt;NA&gt;                 2807344 &lt;NA&gt;  y            
-##  2 11006        NA Cöll… Cölln; Colonia;…     7576815 y     y            
-##  3  2873        NA Have… Horelberg            2908644 &lt;NA&gt;  y            
-##  4  9287        NA Hitz… Hidesaker; Hide…     2903470 y     y            
-##  5   579        NA Berl… Berlin-Kölln; B…     2950159 y     y            
-##  6   579        NA Berl… Berlin-Kölln; B…     2950159 y     y            
-##  7   584        NA Bern… Bernau; Bernow;…     2950096 &lt;NA&gt;  y            
-##  8 11875        NA Pots… Potzupimi; Post…     2852458 y     y            
-##  9   584        NA Bern… Bernau; Bernow;…     2950096 &lt;NA&gt;  y            
-## 10  4724        NA Malc… Berlin-Malchow       2874120 y     y            
-## # … with 37 more variables: Settlement_From &lt;dbl&gt;, Settlement_To &lt;dbl&gt;,
-## #   Settlement_Description &lt;chr&gt;, Is_Town &lt;chr&gt;, Town_From &lt;dbl&gt;,
-## #   Town_To &lt;lgl&gt;, Town_Description &lt;chr&gt;, Is_Toll &lt;chr&gt;, Toll_From &lt;dbl&gt;,
-## #   Toll_To &lt;dbl&gt;, Toll_Description &lt;chr&gt;, Is_Staple &lt;chr&gt;, Staple_From &lt;dbl&gt;,
-## #   Staple_To &lt;dbl&gt;, Staple_Duration_Of_Stay &lt;dbl&gt;, Staple_Description &lt;chr&gt;,
-## #   Is_Fair &lt;chr&gt;, Fair_From &lt;dbl&gt;, Fair_To &lt;lgl&gt;, Fair_Description &lt;chr&gt;,
-## #   Is_Ferry &lt;chr&gt;, Ferry_From &lt;dbl&gt;, Ferry_To &lt;lgl&gt;, Ferry_Description &lt;chr&gt;,
-## #   Is_Bridge &lt;chr&gt;, Bridge_From &lt;dbl&gt;, Bridge_To &lt;lgl&gt;,
-## #   Bridge_Description &lt;chr&gt;, Is_Harbour &lt;chr&gt;, Harbour_From &lt;dbl&gt;,
-## #   Harbour_To &lt;lgl&gt;, Harbour_Description &lt;chr&gt;, Is_Lock &lt;lgl&gt;,
-## #   Lock_From &lt;lgl&gt;, Lock_To &lt;lgl&gt;, Lock_Description &lt;lgl&gt;, betweenness &lt;dbl&gt;
-</code></pre>
+<table>
+<caption>
+Table 1: Nodes with highest betweenness scores:
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Name
+</th>
+<th style="text-align:right;">
+betweenness
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Wittenberge
+</td>
+<td style="text-align:right;">
+21883786
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cölln (Berlin)
+</td>
+<td style="text-align:right;">
+21044547
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Havelberg
+</td>
+<td style="text-align:right;">
+20997097
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hitzacker
+</td>
+<td style="text-align:right;">
+20414717
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Berlin
+</td>
+<td style="text-align:right;">
+19693706
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Berlin
+</td>
+<td style="text-align:right;">
+19316790
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bernau bei Berlin
+</td>
+<td style="text-align:right;">
+19291164
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Potsdam
+</td>
+<td style="text-align:right;">
+19272557
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bernau bei Berlin
+</td>
+<td style="text-align:right;">
+19257977
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Malchow
+</td>
+<td style="text-align:right;">
+19240900
+</td>
+</tr>
+</tbody>
+</table>
 <p>Or color all nodes on their betweenness score, and display on a map:</p>
 <pre><code class="language-r">betweenness_sf = sf_net %&gt;% 
   activate(nodes) %&gt;% 
@@ -948,7 +1028,8 @@ ggplot() + geom_sf(data = betweenness_sf, aes(color = betweenness), alpha =  .8)
 <p>Interestingly, the highest betweenness nodes all seem to fall along a single path. Is this a particularly important trunk road? We can also plot the whole network. To use ggplot, create separate nodes and edges tables using <code>as_tibble</code>, and add them as separate geoms to the same plot:</p>
 <pre><code class="language-r">ggplot() + 
   geom_sf(data = sf_net %&gt;% activate(nodes) %&gt;% as_tibble(), alpha =  .1, size  = .01)  + 
-  geom_sf(data = sf_net %&gt;% activate(edges) %&gt;% as_tibble(), alpha = .5) +theme_void() + labs(title  = &quot;Viabundus Network, All Routes&quot;, caption = 'Made with data from Viabundus.eu') + 
+  geom_sf(data = sf_net %&gt;% activate(edges) %&gt;% as_tibble(), alpha = .5) +theme_void() + 
+  labs(title  = &quot;Viabundus Network, All Routes&quot;, caption = 'Made with data from Viabundus.eu') + 
   theme(title = element_text(size = 14, face = 'bold'))
 </code></pre>
 <p><img src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
@@ -986,7 +1067,7 @@ edge_list = paths %&gt;%
   pull(edge_paths) %&gt;%
   unlist() %&gt;% as_tibble()
 </code></pre>
-<p>Use inner join to attach the edge and node IDs in the route to the edge and nodes tables from the sfnetwork object. You’ll need to recreate them as sf objects:</p>
+<p>Use <code>inner join()</code> to attach the edge and node IDs in the route to the edge and nodes tables from the sfnetwork object. You’ll need to recreate them as sf objects:</p>
 <pre><code class="language-r">line_to_draw = edge_list %&gt;% inner_join(sf_net %&gt;% 
   activate(edges) %&gt;% 
   as_tibble() %&gt;% 
@@ -1075,32 +1156,145 @@ leaflet() %&gt;%
 long_data = nodes_to_draw %&gt;% mutate(order = 1:nrow(.)) %&gt;% 
   pivot_longer(names_to = 'data_type' , values_to = 'value_of', cols =matches(&quot;From$|To$&quot;, ignore.case = F))
 
-long_data %&gt;% select(Name, data_type, value_of) %&gt;% head(10)
+long_data %&gt;% select(Name, data_type, value_of) %&gt;% head(10) %&gt;% kbl()
 </code></pre>
-<pre><code>## # A tibble: 10 x 3
-##    Name    data_type       value_of
-##    &lt;chr&gt;   &lt;chr&gt;              &lt;dbl&gt;
-##  1 Hamburg Settlement_From      831
-##  2 Hamburg Settlement_To         NA
-##  3 Hamburg Town_From           1150
-##  4 Hamburg Town_To               NA
-##  5 Hamburg Toll_From           1188
-##  6 Hamburg Toll_To               NA
-##  7 Hamburg Staple_From         1458
-##  8 Hamburg Staple_To           1748
-##  9 Hamburg Fair_From           1000
-## 10 Hamburg Fair_To               NA
-</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Name
+</th>
+<th style="text-align:left;">
+data\_type
+</th>
+<th style="text-align:right;">
+value\_of
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Hamburg
+</td>
+<td style="text-align:left;">
+Settlement\_From
+</td>
+<td style="text-align:right;">
+831
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hamburg
+</td>
+<td style="text-align:left;">
+Settlement\_To
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hamburg
+</td>
+<td style="text-align:left;">
+Town\_From
+</td>
+<td style="text-align:right;">
+1150
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hamburg
+</td>
+<td style="text-align:left;">
+Town\_To
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hamburg
+</td>
+<td style="text-align:left;">
+Toll\_From
+</td>
+<td style="text-align:right;">
+1188
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hamburg
+</td>
+<td style="text-align:left;">
+Toll\_To
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hamburg
+</td>
+<td style="text-align:left;">
+Staple\_From
+</td>
+<td style="text-align:right;">
+1458
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hamburg
+</td>
+<td style="text-align:left;">
+Staple\_To
+</td>
+<td style="text-align:right;">
+1748
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hamburg
+</td>
+<td style="text-align:left;">
+Fair\_From
+</td>
+<td style="text-align:right;">
+1000
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hamburg
+</td>
+<td style="text-align:left;">
+Fair\_To
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+</tbody>
+</table>
 <p>Next I used <code>ifelse</code> to filter the value column in a different way depending on whether it was a to date or a from date:</p>
 <pre><code class="language-r">long_data  = long_data %&gt;% 
   mutate(date_type = ifelse(str_detect(data_type, &quot;From$&quot;), 'from', 'to')) %&gt;% 
   filter(date_type == 'from' &amp; value_of &lt; 1600 | data_type == 'to' &amp; value_of &gt;1600| is.na(value_of))
 </code></pre>
 <p>Using, this, we can easily list each place visited:</p>
-<pre><code class="language-r">long_data %&gt;% distinct(order, .keep_all = T) %&gt;% select(order, Name) %&gt;% pull(Name) %&gt;% paste0(collapse = &quot; -&gt; &quot;)
+<pre><code class="language-r">library(htmltools)
+long_data %&gt;% distinct(order, .keep_all = T) %&gt;% select(order, Name) %&gt;% filter(!is.na(Name)) %&gt;% distinct(Name) %&gt;% pull(Name)%&gt;% paste0(collapse = &quot; &lt;br&gt; &quot;) %&gt;% HTML()
 </code></pre>
-<pre><code>## [1] &quot;Hamburg -&gt; NA -&gt; Ottensen -&gt; Blankenese -&gt; NA -&gt; Buxtehude -&gt; Buxtehude -&gt; Buxtehude -&gt; Kammerbusch -&gt; Ahrenswohlde -&gt; Wangersen -&gt; Steddorf -&gt; Boitzen -&gt; Heeslingen -&gt; Zeven -&gt; Zeven -&gt; Oldendorf (Zeven) -&gt; Steinfeld -&gt; Otterstedt -&gt; Ottersberg -&gt; Bassen -&gt; Borstel (Achim) -&gt; Achim (Weser) -&gt; Uphusen (Bremen) -&gt; Mahndorf (Bremen) -&gt; Arbergen -&gt; Hemelingen -&gt; Hastedt -&gt; Bremen -&gt; Bremen -&gt; NA -&gt; Neustadt -&gt; Warturm -&gt; Kirchhuchting -&gt; Mittelshuchting -&gt; Varrel -&gt; Horstedt -&gt; Wildeshausen -&gt; Wildeshausen -&gt; Wildeshausen -&gt; Ahlhorn -&gt; Ahlhorn -&gt; Lethe -&gt; Bethen -&gt; Cloppenburg -&gt; Cloppenburg -&gt; Cloppenburg -&gt; Krapendorf -&gt; Krapendorf -&gt; Lastrup -&gt; Löningen -&gt; Haselünne -&gt; NA -&gt; NA -&gt; Bawinkel -&gt; Lingen -&gt; Lingen -&gt; NA -&gt; NA -&gt; Schepsdorf -&gt; Schepsdorf -&gt; Südlohne (Bentheim) -&gt; Nordhorn -&gt; Nordhorn -&gt; NA -&gt; NA -&gt; NA -&gt; NA -&gt; Ootmarsum -&gt; Ootmarsum -&gt; Ootmarsum -&gt; Almelo -&gt; Almelo -&gt; Wierden -&gt; Rijssen -&gt; Rijssen -&gt; Rijssen -&gt; Heeten -&gt; Heeten -&gt; Deventer -&gt; Deventer -&gt; NA -&gt; Twello -&gt; Twello -&gt; Apeldoorn -&gt; Hoog-Soeren -&gt; Garderen -&gt; Voorthuizen -&gt; Voorthuizen -&gt; Terschuur -&gt; Hoevelaken -&gt; Hoevelaken -&gt; Amersfoort -&gt; Amersfoort -&gt; Amersfoort -&gt; NA -&gt; De Bilt -&gt; De Bilt -&gt; Utrecht&quot;
-</code></pre>
+<p>Hamburg <br> Ottensen <br> Blankenese <br> Buxtehude <br> Kammerbusch <br> Ahrenswohlde <br> Wangersen <br> Steddorf <br> Boitzen <br> Heeslingen <br> Zeven <br> Oldendorf (Zeven) <br> Steinfeld <br> Otterstedt <br> Ottersberg <br> Bassen <br> Borstel (Achim) <br> Achim (Weser) <br> Uphusen (Bremen) <br> Mahndorf (Bremen) <br> Arbergen <br> Hemelingen <br> Hastedt <br> Bremen <br> Neustadt <br> Warturm <br> Kirchhuchting <br> Mittelshuchting <br> Varrel <br> Horstedt <br> Wildeshausen <br> Ahlhorn <br> Lethe <br> Bethen <br> Cloppenburg <br> Krapendorf <br> Lastrup <br> Löningen <br> Haselünne <br> Bawinkel <br> Lingen <br> Schepsdorf <br> Südlohne (Bentheim) <br> Nordhorn <br> Ootmarsum <br> Almelo <br> Wierden <br> Rijssen <br> Heeten <br> Deventer <br> Twello <br> Apeldoorn <br> Hoog-Soeren <br> Garderen <br> Voorthuizen <br> Terschuur <br> Hoevelaken <br> Amersfoort <br> De Bilt <br> Utrecht</p>
 <p>Another useful task is to make a nice summary of the places visited and their types. To do this easily, the data needs to be made ‘longer’ again. This time, we want a pair of columns where one is the node type, and the other is whether it is a ‘y’ or simply empty.</p>
 <pre><code class="language-r">longer_data = long_data %&gt;% pivot_longer(names_to = 'node_type', values_to = 'type', cols = matches('^Is_'))
 
@@ -1127,38 +1321,1041 @@ longer_data %&gt;% select(Name, node_type, type) %&gt;% head(10)
 <p>Now we can add all the node types associated with each place, using <code>summarise</code>. We need to use <code>unique</code> too, and then it’ll just print one instance of each type for each place:</p>
 <pre><code class="language-r">longer_data %&gt;% 
   group_by(order) %&gt;% 
-  summarise(Name = max(Name),types = paste0(unique(node_type), collapse = '; '))
+  summarise(Name = max(Name),types = paste0(unique(node_type), collapse = '; ')) %&gt;% filter(!is.na(Name)) %&gt;% kbl()
 </code></pre>
-<pre><code>## # A tibble: 98 x 3
-##    order Name         types                                                     
-##    &lt;int&gt; &lt;chr&gt;        &lt;chr&gt;                                                     
-##  1     1 Hamburg      Is_Settlement; Is_Town; Is_Toll; Is_Staple; Is_Fair; Is_H…
-##  2     2 &lt;NA&gt;         Is_Harbour                                                
-##  3     3 Ottensen     Is_Settlement                                             
-##  4     4 Blankenese   Is_Settlement; Is_Ferry                                   
-##  5     5 &lt;NA&gt;         Is_Harbour                                                
-##  6     6 Buxtehude    Is_Settlement; Is_Town; Is_Toll; Is_Fair                  
-##  7     7 Buxtehude    Is_Settlement; Is_Town; Is_Toll; Is_Fair                  
-##  8     8 Buxtehude    Is_Settlement; Is_Town; Is_Toll; Is_Fair                  
-##  9     9 Kammerbusch  Is_Settlement                                             
-## 10    10 Ahrenswohlde Is_Settlement                                             
-## # … with 88 more rows
-</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:right;">
+order
+</th>
+<th style="text-align:left;">
+Name
+</th>
+<th style="text-align:left;">
+types
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+Hamburg
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Staple; Is\_Fair; Is\_Harbour
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+Ottensen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+Blankenese
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Ferry
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+Buxtehude
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+Buxtehude
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+Buxtehude
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+Kammerbusch
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+Ahrenswohlde
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+Wangersen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+Steddorf
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+Boitzen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+Heeslingen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:left;">
+Zeven
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+Zeven
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:left;">
+Oldendorf (Zeven)
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+Steinfeld
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+19
+</td>
+<td style="text-align:left;">
+Otterstedt
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+Ottersberg
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Toll; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:left;">
+Bassen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+22
+</td>
+<td style="text-align:left;">
+Borstel (Achim)
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:left;">
+Achim (Weser)
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:left;">
+Uphusen (Bremen)
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+25
+</td>
+<td style="text-align:left;">
+Mahndorf (Bremen)
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+26
+</td>
+<td style="text-align:left;">
+Arbergen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+27
+</td>
+<td style="text-align:left;">
+Hemelingen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+28
+</td>
+<td style="text-align:left;">
+Hastedt
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+29
+</td>
+<td style="text-align:left;">
+Bremen
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Staple; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:left;">
+Bremen
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Staple; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+33
+</td>
+<td style="text-align:left;">
+Warturm
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Toll; Is\_Bridge
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+34
+</td>
+<td style="text-align:left;">
+Kirchhuchting
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+35
+</td>
+<td style="text-align:left;">
+Mittelshuchting
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+36
+</td>
+<td style="text-align:left;">
+Varrel
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Toll
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+37
+</td>
+<td style="text-align:left;">
+Horstedt
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+38
+</td>
+<td style="text-align:left;">
+Wildeshausen
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+39
+</td>
+<td style="text-align:left;">
+Wildeshausen
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:left;">
+Wildeshausen
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+41
+</td>
+<td style="text-align:left;">
+Ahlhorn
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+42
+</td>
+<td style="text-align:left;">
+Ahlhorn
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+43
+</td>
+<td style="text-align:left;">
+Lethe
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+44
+</td>
+<td style="text-align:left;">
+Bethen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+45
+</td>
+<td style="text-align:left;">
+Cloppenburg
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:left;">
+Cloppenburg
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+47
+</td>
+<td style="text-align:left;">
+Cloppenburg
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+48
+</td>
+<td style="text-align:left;">
+Krapendorf
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+49
+</td>
+<td style="text-align:left;">
+Krapendorf
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:left;">
+Lastrup
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+51
+</td>
+<td style="text-align:left;">
+Löningen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+52
+</td>
+<td style="text-align:left;">
+Haselünne
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+55
+</td>
+<td style="text-align:left;">
+Bawinkel
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+56
+</td>
+<td style="text-align:left;">
+Lingen
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+57
+</td>
+<td style="text-align:left;">
+Lingen
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Fair
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:left;">
+Schepsdorf
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+61
+</td>
+<td style="text-align:left;">
+Schepsdorf
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+62
+</td>
+<td style="text-align:left;">
+Südlohne (Bentheim)
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+63
+</td>
+<td style="text-align:left;">
+Nordhorn
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+64
+</td>
+<td style="text-align:left;">
+Nordhorn
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Toll
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+69
+</td>
+<td style="text-align:left;">
+Ootmarsum
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:left;">
+Ootmarsum
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+71
+</td>
+<td style="text-align:left;">
+Ootmarsum
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+72
+</td>
+<td style="text-align:left;">
+Almelo
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+73
+</td>
+<td style="text-align:left;">
+Almelo
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+74
+</td>
+<td style="text-align:left;">
+Wierden
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+75
+</td>
+<td style="text-align:left;">
+Rijssen
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:left;">
+Rijssen
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+77
+</td>
+<td style="text-align:left;">
+Rijssen
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+78
+</td>
+<td style="text-align:left;">
+Heeten
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+79
+</td>
+<td style="text-align:left;">
+Heeten
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:left;">
+Deventer
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+81
+</td>
+<td style="text-align:left;">
+Deventer
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+83
+</td>
+<td style="text-align:left;">
+Twello
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+84
+</td>
+<td style="text-align:left;">
+Twello
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+85
+</td>
+<td style="text-align:left;">
+Apeldoorn
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Toll
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+86
+</td>
+<td style="text-align:left;">
+Hoog-Soeren
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:left;">
+Garderen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+88
+</td>
+<td style="text-align:left;">
+Voorthuizen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+89
+</td>
+<td style="text-align:left;">
+Voorthuizen
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+90
+</td>
+<td style="text-align:left;">
+Terschuur
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+91
+</td>
+<td style="text-align:left;">
+Hoevelaken
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+92
+</td>
+<td style="text-align:left;">
+Hoevelaken
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+93
+</td>
+<td style="text-align:left;">
+Amersfoort
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+94
+</td>
+<td style="text-align:left;">
+Amersfoort
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+95
+</td>
+<td style="text-align:left;">
+Amersfoort
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+97
+</td>
+<td style="text-align:left;">
+De Bilt
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+98
+</td>
+<td style="text-align:left;">
+De Bilt
+</td>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+99
+</td>
+<td style="text-align:left;">
+Utrecht
+</td>
+<td style="text-align:left;">
+Is\_Settlement; Is\_Town; Is\_Harbour
+</td>
+</tr>
+</tbody>
+</table>
 <p>Tidy data also allows us to count the totals for each type of node passed. Again, we want to remove the duplicated data which is easy to do with <code>distinct</code></p>
-<pre><code class="language-r">longer_data %&gt;% distinct(order, node_type) %&gt;% group_by(node_type) %&gt;% tally() 
+<pre><code class="language-r">longer_data %&gt;% distinct(order, node_type) %&gt;% group_by(node_type) %&gt;% tally() %&gt;% kbl()
 </code></pre>
-<pre><code>## # A tibble: 8 x 2
-##   node_type         n
-##   &lt;chr&gt;         &lt;int&gt;
-## 1 Is_Bridge         4
-## 2 Is_Fair          18
-## 3 Is_Ferry          3
-## 4 Is_Harbour       10
-## 5 Is_Settlement    85
-## 6 Is_Staple         3
-## 7 Is_Toll          20
-## 8 Is_Town          31
-</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+node\_type
+</th>
+<th style="text-align:right;">
+n
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Is\_Bridge
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Is\_Fair
+</td>
+<td style="text-align:right;">
+18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Is\_Ferry
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Is\_Harbour
+</td>
+<td style="text-align:right;">
+10
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Is\_Settlement
+</td>
+<td style="text-align:right;">
+85
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Is\_Staple
+</td>
+<td style="text-align:right;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Is\_Toll
+</td>
+<td style="text-align:right;">
+20
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Is\_Town
+</td>
+<td style="text-align:right;">
+31
+</td>
+</tr>
+</tbody>
+</table>
 <h1 id="estimate-travel-times">Estimate Travel Times</h1>
 <p>We can use this info on the nodes passed plus the road lengths to estimate the total travel time.</p>
 <p>First, get the total distance (note that everything is in metres for now):</p>
@@ -1184,9 +2381,9 @@ ferries = ferries /24
 
 total_time_taken = time_taken_in_days + staples+ ferries
 
-total_time_taken
+paste0(&quot;Total time taken (in days): &quot;, total_time_taken)
 </code></pre>
-<pre><code>## [1] 15.3426
+<pre><code>## [1] &quot;Total time taken (in days): 15.3426&quot;
 </code></pre>
 <h1 id="calculating-all-daily-travel-rates">Calculating all daily travel rates</h1>
 <p><code>sfnetworks</code> also has some functions for calculating the ‘neighbourhood’ of a node - the number of nodes reachable within a specified distance.</p>
