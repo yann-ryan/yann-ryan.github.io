@@ -34,6 +34,8 @@
 &lt;link href=&#34;https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 &lt;script src=&#34;https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
 &lt;link href=&#34;https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
 &lt;script src=&#34;https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
 &lt;link href=&#34;https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
@@ -367,9 +369,10 @@ leaflet() %&amp;gt;%
 long_data = nodes_to_draw %&amp;gt;% mutate(order = 1:nrow(.)) %&amp;gt;% 
   pivot_longer(names_to = &#39;data_type&#39; , values_to = &#39;value_of&#39;, cols =matches(&amp;quot;From$|To$&amp;quot;, ignore.case = F))
 
-long_data %&amp;gt;% select(Name, data_type, value_of) %&amp;gt;% head(10) %&amp;gt;% kbl()
+long_data %&amp;gt;% select(Name, data_type, value_of) %&amp;gt;% head(10) %&amp;gt;% kbl()%&amp;gt;%
+  kable_styling(bootstrap_options = c(&amp;quot;striped&amp;quot;, &amp;quot;hover&amp;quot;, &amp;quot;condensed&amp;quot;))
 &lt;/code&gt;&lt;/pre&gt;
-&lt;table&gt;
+&lt;table class=&#34;table table-striped table-hover table-condensed&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th style=&#34;text-align:left;&#34;&gt;
@@ -503,9 +506,323 @@ NA
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Using, this, we can easily list each place visited:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(htmltools)
-long_data %&amp;gt;% distinct(order, .keep_all = T) %&amp;gt;% select(order, Name) %&amp;gt;% filter(!is.na(Name)) %&amp;gt;% distinct(Name) %&amp;gt;% pull(Name)%&amp;gt;% paste0(collapse = &amp;quot; &amp;lt;br&amp;gt; &amp;quot;) %&amp;gt;% HTML()
+long_data %&amp;gt;% distinct(order, .keep_all = T) %&amp;gt;% select(order, Name) %&amp;gt;% filter(!is.na(Name)) %&amp;gt;% distinct(Name) %&amp;gt;% kbl() %&amp;gt;%
+  kable_styling(bootstrap_options = c(&amp;quot;striped&amp;quot;, &amp;quot;hover&amp;quot;, &amp;quot;condensed&amp;quot;))%&amp;gt;%
+  scroll_box(height = &amp;quot;400px&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Hamburg &lt;br&gt; Ottensen &lt;br&gt; Blankenese &lt;br&gt; Buxtehude &lt;br&gt; Kammerbusch &lt;br&gt; Ahrenswohlde &lt;br&gt; Wangersen &lt;br&gt; Steddorf &lt;br&gt; Boitzen &lt;br&gt; Heeslingen &lt;br&gt; Zeven &lt;br&gt; Oldendorf (Zeven) &lt;br&gt; Steinfeld &lt;br&gt; Otterstedt &lt;br&gt; Ottersberg &lt;br&gt; Bassen &lt;br&gt; Borstel (Achim) &lt;br&gt; Achim (Weser) &lt;br&gt; Uphusen (Bremen) &lt;br&gt; Mahndorf (Bremen) &lt;br&gt; Arbergen &lt;br&gt; Hemelingen &lt;br&gt; Hastedt &lt;br&gt; Bremen &lt;br&gt; Neustadt &lt;br&gt; Warturm &lt;br&gt; Kirchhuchting &lt;br&gt; Mittelshuchting &lt;br&gt; Varrel &lt;br&gt; Horstedt &lt;br&gt; Wildeshausen &lt;br&gt; Ahlhorn &lt;br&gt; Lethe &lt;br&gt; Bethen &lt;br&gt; Cloppenburg &lt;br&gt; Krapendorf &lt;br&gt; Lastrup &lt;br&gt; Löningen &lt;br&gt; Haselünne &lt;br&gt; Bawinkel &lt;br&gt; Lingen &lt;br&gt; Schepsdorf &lt;br&gt; Südlohne (Bentheim) &lt;br&gt; Nordhorn &lt;br&gt; Ootmarsum &lt;br&gt; Almelo &lt;br&gt; Wierden &lt;br&gt; Rijssen &lt;br&gt; Heeten &lt;br&gt; Deventer &lt;br&gt; Twello &lt;br&gt; Apeldoorn &lt;br&gt; Hoog-Soeren &lt;br&gt; Garderen &lt;br&gt; Voorthuizen &lt;br&gt; Terschuur &lt;br&gt; Hoevelaken &lt;br&gt; Amersfoort &lt;br&gt; De Bilt &lt;br&gt; Utrecht&lt;/p&gt;
+&lt;div style=&#34;border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; &#34;&gt;
+&lt;table class=&#34;table table-striped table-hover table-condensed&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;position: sticky; top:0; background-color: #FFFFFF;&#34;&gt;
+Name
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Hamburg
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ottensen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Blankenese
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Buxtehude
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Kammerbusch
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ahrenswohlde
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Wangersen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Steddorf
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Boitzen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Heeslingen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Zeven
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Oldendorf (Zeven)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Steinfeld
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Otterstedt
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ottersberg
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bassen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Borstel (Achim)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Achim (Weser)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Uphusen (Bremen)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mahndorf (Bremen)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Arbergen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Hemelingen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Hastedt
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bremen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Neustadt
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Warturm
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Kirchhuchting
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mittelshuchting
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Varrel
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Horstedt
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Wildeshausen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ahlhorn
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Lethe
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bethen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Cloppenburg
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Krapendorf
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Lastrup
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Löningen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Haselünne
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Bawinkel
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Lingen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Schepsdorf
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Südlohne (Bentheim)
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Nordhorn
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Ootmarsum
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Almelo
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Wierden
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Rijssen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Heeten
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Deventer
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Twello
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Apeldoorn
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Hoog-Soeren
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Garderen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Voorthuizen
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Terschuur
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Hoevelaken
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Amersfoort
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+De Bilt
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Utrecht
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
 &lt;p&gt;Another useful task is to make a nice summary of the places visited and their types. To do this easily, the data needs to be made ‘longer’ again. This time, we want a pair of columns where one is the node type, and the other is whether it is a ‘y’ or simply empty.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;longer_data = long_data %&amp;gt;% pivot_longer(names_to = &#39;node_type&#39;, values_to = &#39;type&#39;, cols = matches(&#39;^Is_&#39;))
 
@@ -532,18 +849,21 @@ longer_data %&amp;gt;% select(Name, node_type, type) %&amp;gt;% head(10)
 &lt;p&gt;Now we can add all the node types associated with each place, using &lt;code&gt;summarise&lt;/code&gt;. We need to use &lt;code&gt;unique&lt;/code&gt; too, and then it’ll just print one instance of each type for each place:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;longer_data %&amp;gt;% 
   group_by(order) %&amp;gt;% 
-  summarise(Name = max(Name),types = paste0(unique(node_type), collapse = &#39;; &#39;)) %&amp;gt;% filter(!is.na(Name)) %&amp;gt;% kbl()
+  summarise(Name = max(Name),types = paste0(unique(node_type), collapse = &#39;; &#39;)) %&amp;gt;% filter(!is.na(Name)) %&amp;gt;% kbl()%&amp;gt;%
+  kable_styling(bootstrap_options = c(&amp;quot;striped&amp;quot;, &amp;quot;hover&amp;quot;, &amp;quot;condensed&amp;quot;))%&amp;gt;%
+  scroll_box(height = &amp;quot;400px&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;table&gt;
+&lt;div style=&#34;border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; &#34;&gt;
+&lt;table class=&#34;table table-striped table-hover table-condensed&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th style=&#34;text-align:right;&#34;&gt;
+&lt;th style=&#34;text-align:right;position: sticky; top:0; background-color: #FFFFFF;&#34;&gt;
 order
 &lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
+&lt;th style=&#34;text-align:left;position: sticky; top:0; background-color: #FFFFFF;&#34;&gt;
 Name
 &lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
+&lt;th style=&#34;text-align:left;position: sticky; top:0; background-color: #FFFFFF;&#34;&gt;
 types
 &lt;/th&gt;
 &lt;/tr&gt;
@@ -1486,10 +1806,12 @@ Is\_Settlement; Is\_Town; Is\_Harbour
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;/div&gt;
 &lt;p&gt;Tidy data also allows us to count the totals for each type of node passed. Again, we want to remove the duplicated data which is easy to do with &lt;code&gt;distinct&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;longer_data %&amp;gt;% distinct(order, node_type) %&amp;gt;% group_by(node_type) %&amp;gt;% tally() %&amp;gt;% kbl()
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;longer_data %&amp;gt;% distinct(order, node_type) %&amp;gt;% group_by(node_type) %&amp;gt;% tally() %&amp;gt;% kbl()%&amp;gt;%
+  kable_styling(bootstrap_options = c(&amp;quot;striped&amp;quot;, &amp;quot;hover&amp;quot;, &amp;quot;condensed&amp;quot;))
 &lt;/code&gt;&lt;/pre&gt;
-&lt;table&gt;
+&lt;table class=&#34;table table-striped table-hover table-condensed&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th style=&#34;text-align:left;&#34;&gt;

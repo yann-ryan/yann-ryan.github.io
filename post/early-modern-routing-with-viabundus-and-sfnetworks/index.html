@@ -823,6 +823,8 @@
 <link href="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/lightable/lightable.css" rel="stylesheet" />
 <script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/kePrint/kePrint.js"></script>
 <link href="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/lightable/lightable.css" rel="stylesheet" />
+<script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/kePrint/kePrint.js"></script>
+<link href="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/lightable/lightable.css" rel="stylesheet" />
 <script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/htmlwidgets/htmlwidgets.js"></script>
 <script src="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/jquery/jquery.min.js"></script>
 <link href="https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/index.en_files/leaflet/leaflet.css" rel="stylesheet" />
@@ -1156,9 +1158,10 @@ leaflet() %&gt;%
 long_data = nodes_to_draw %&gt;% mutate(order = 1:nrow(.)) %&gt;% 
   pivot_longer(names_to = 'data_type' , values_to = 'value_of', cols =matches(&quot;From$|To$&quot;, ignore.case = F))
 
-long_data %&gt;% select(Name, data_type, value_of) %&gt;% head(10) %&gt;% kbl()
+long_data %&gt;% select(Name, data_type, value_of) %&gt;% head(10) %&gt;% kbl()%&gt;%
+  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;, &quot;condensed&quot;))
 </code></pre>
-<table>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -1292,9 +1295,323 @@ NA
 </code></pre>
 <p>Using, this, we can easily list each place visited:</p>
 <pre><code class="language-r">library(htmltools)
-long_data %&gt;% distinct(order, .keep_all = T) %&gt;% select(order, Name) %&gt;% filter(!is.na(Name)) %&gt;% distinct(Name) %&gt;% pull(Name)%&gt;% paste0(collapse = &quot; &lt;br&gt; &quot;) %&gt;% HTML()
+long_data %&gt;% distinct(order, .keep_all = T) %&gt;% select(order, Name) %&gt;% filter(!is.na(Name)) %&gt;% distinct(Name) %&gt;% kbl() %&gt;%
+  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;, &quot;condensed&quot;))%&gt;%
+  scroll_box(height = &quot;400px&quot;)
 </code></pre>
-<p>Hamburg <br> Ottensen <br> Blankenese <br> Buxtehude <br> Kammerbusch <br> Ahrenswohlde <br> Wangersen <br> Steddorf <br> Boitzen <br> Heeslingen <br> Zeven <br> Oldendorf (Zeven) <br> Steinfeld <br> Otterstedt <br> Ottersberg <br> Bassen <br> Borstel (Achim) <br> Achim (Weser) <br> Uphusen (Bremen) <br> Mahndorf (Bremen) <br> Arbergen <br> Hemelingen <br> Hastedt <br> Bremen <br> Neustadt <br> Warturm <br> Kirchhuchting <br> Mittelshuchting <br> Varrel <br> Horstedt <br> Wildeshausen <br> Ahlhorn <br> Lethe <br> Bethen <br> Cloppenburg <br> Krapendorf <br> Lastrup <br> Löningen <br> Haselünne <br> Bawinkel <br> Lingen <br> Schepsdorf <br> Südlohne (Bentheim) <br> Nordhorn <br> Ootmarsum <br> Almelo <br> Wierden <br> Rijssen <br> Heeten <br> Deventer <br> Twello <br> Apeldoorn <br> Hoog-Soeren <br> Garderen <br> Voorthuizen <br> Terschuur <br> Hoevelaken <br> Amersfoort <br> De Bilt <br> Utrecht</p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; ">
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Name
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Hamburg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ottensen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Blankenese
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Buxtehude
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Kammerbusch
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ahrenswohlde
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Wangersen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Steddorf
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Boitzen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Heeslingen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Zeven
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Oldendorf (Zeven)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Steinfeld
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Otterstedt
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ottersberg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bassen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Borstel (Achim)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Achim (Weser)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Uphusen (Bremen)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mahndorf (Bremen)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Arbergen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hemelingen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hastedt
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bremen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Neustadt
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Warturm
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Kirchhuchting
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mittelshuchting
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Varrel
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Horstedt
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Wildeshausen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ahlhorn
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Lethe
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bethen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cloppenburg
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Krapendorf
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Lastrup
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Löningen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Haselünne
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bawinkel
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Lingen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Schepsdorf
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Südlohne (Bentheim)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Nordhorn
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ootmarsum
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Almelo
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Wierden
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Rijssen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Heeten
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Deventer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Twello
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Apeldoorn
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hoog-Soeren
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Garderen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Voorthuizen
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Terschuur
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Hoevelaken
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Amersfoort
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+De Bilt
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Utrecht
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>Another useful task is to make a nice summary of the places visited and their types. To do this easily, the data needs to be made ‘longer’ again. This time, we want a pair of columns where one is the node type, and the other is whether it is a ‘y’ or simply empty.</p>
 <pre><code class="language-r">longer_data = long_data %&gt;% pivot_longer(names_to = 'node_type', values_to = 'type', cols = matches('^Is_'))
 
@@ -1321,18 +1638,21 @@ longer_data %&gt;% select(Name, node_type, type) %&gt;% head(10)
 <p>Now we can add all the node types associated with each place, using <code>summarise</code>. We need to use <code>unique</code> too, and then it’ll just print one instance of each type for each place:</p>
 <pre><code class="language-r">longer_data %&gt;% 
   group_by(order) %&gt;% 
-  summarise(Name = max(Name),types = paste0(unique(node_type), collapse = '; ')) %&gt;% filter(!is.na(Name)) %&gt;% kbl()
+  summarise(Name = max(Name),types = paste0(unique(node_type), collapse = '; ')) %&gt;% filter(!is.na(Name)) %&gt;% kbl()%&gt;%
+  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;, &quot;condensed&quot;))%&gt;%
+  scroll_box(height = &quot;400px&quot;)
 </code></pre>
-<table>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; ">
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="text-align:right;">
+<th style="text-align:right;position: sticky; top:0; background-color: #FFFFFF;">
 order
 </th>
-<th style="text-align:left;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Name
 </th>
-<th style="text-align:left;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 types
 </th>
 </tr>
@@ -2275,10 +2595,12 @@ Is\_Settlement; Is\_Town; Is\_Harbour
 </tr>
 </tbody>
 </table>
+</div>
 <p>Tidy data also allows us to count the totals for each type of node passed. Again, we want to remove the duplicated data which is easy to do with <code>distinct</code></p>
-<pre><code class="language-r">longer_data %&gt;% distinct(order, node_type) %&gt;% group_by(node_type) %&gt;% tally() %&gt;% kbl()
+<pre><code class="language-r">longer_data %&gt;% distinct(order, node_type) %&gt;% group_by(node_type) %&gt;% tally() %&gt;% kbl()%&gt;%
+  kable_styling(bootstrap_options = c(&quot;striped&quot;, &quot;hover&quot;, &quot;condensed&quot;))
 </code></pre>
-<table>
+<table class="table table-striped table-hover table-condensed" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
