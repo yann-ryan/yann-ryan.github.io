@@ -57,8 +57,8 @@
 &lt;h1 id=&#34;create-a-sfnetworks-object-from-viabundus-data&#34;&gt;Create a &lt;code&gt;sfnetworks&lt;/code&gt; object from Viabundus data&lt;/h1&gt;
 &lt;p&gt;The data is freely available &lt;a href=&#34;https://www.landesgeschichte.uni-goettingen.de/handelsstrassen/index.php#download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;, with a CC-BY-SA licence. I recommend having a good read of the documentation to understand all the additional tables, but the ones we’ll use today are the two main ones: the nodes and edges. First, import them into R:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)
-nodes = read_csv(&#39;/Users/yannryanpersonal/Documents/r-studio/Viabundus-1.0-CSV/Nodes.csv&#39;)
-edges = read_csv(&#39;/Users/yannryanpersonal/Documents/r-studio/Viabundus-1.0-CSV/Edges.csv&#39;)
+nodes = read_csv(&#39;Viabundus-1.0-CSV/Nodes.csv&#39;)
+edges = read_csv(&#39;Viabundus-1.0-CSV/Edges.csv&#39;)
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Next, you need to convert them into &lt;code&gt;sf&lt;/code&gt; objects. The geographic data in the Viabundus edges table is supplied in a format called ‘Well Known Text’ (WKT). The sf package supports this as a data input - just supply the column containing the spatial data as the argument &lt;code&gt;wkt =&lt;/code&gt;. In this case, the WKT column in the edges table is also called WKT. Use &lt;code&gt;st_set_crs&lt;/code&gt; to set the Coordinate Reference System, which needs to be the same for both tables.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(sf)
