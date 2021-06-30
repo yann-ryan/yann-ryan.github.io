@@ -20,6 +20,24 @@
     <loc>https://yann-ryan.github.io/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://yann-ryan.github.io/tag/archives/</loc>
+    <lastmod>2021-06-30T11:15:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/authors/</loc>
+    <lastmod>2021-06-30T11:15:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/talk/distant-reading-large-correspondence-archives-using-networks/</loc>
+    <lastmod>2021-06-30T11:15:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/tag/network-analysis/</loc>
+    <lastmod>2021-06-30T11:15:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/tags/</loc>
+    <lastmod>2021-06-30T11:15:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/author/yann-ryan/</loc>
+    <lastmod>2021-06-30T11:15:00+00:00</lastmod>
+  </url><url>
     <loc>https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/</loc>
     <lastmod>2021-05-03T15:12:07+02:00</lastmod>
   </url><url>
@@ -44,9 +62,6 @@
     <loc>https://yann-ryan.github.io/tag/mapping/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yann-ryan.github.io/tag/network-analysis/</loc>
-    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://yann-ryan.github.io/project/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -59,9 +74,6 @@
     <loc>https://yann-ryan.github.io/project/visual-search/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yann-ryan.github.io/tags/</loc>
-    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://yann-ryan.github.io/project/temporal-clusters/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url><url>
@@ -72,9 +84,6 @@
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/publication-type/2/</loc>
-    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yann-ryan.github.io/authors/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/publication/title-list/</loc>
@@ -96,9 +105,6 @@
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/publication/</loc>
-    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yann-ryan.github.io/author/yann-ryan/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/publication-type/1/</loc>
@@ -137,7 +143,10 @@
     <loc>https://yann-ryan.github.io/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yann-ryan.github.io/slides/example/</loc>
+    <loc>https://yann-ryan.github.io/slides/copyofexample/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/slides/hnr/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/publication/journal-article/</loc>

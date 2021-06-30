@@ -8,9 +8,9 @@
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
     <item>
       <title>Slides</title>
-      <link>https://yann-ryan.github.io/slides/example/</link>
+      <link>https://yann-ryan.github.io/slides/copyofexample/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://yann-ryan.github.io/slides/example/</guid>
+      <guid>https://yann-ryan.github.io/slides/copyofexample/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -132,6 +132,518 @@ Three
 &lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://yann-ryan.github.io/slides/hnr/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/slides/hnr/</guid>
+      <description>&lt;h2 id=&#34;the-networking-archives-team&#34;&gt;The &amp;lsquo;Networking Archives&amp;rsquo; Team&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Worked is based on a larger project, thanks to (clockwise from
+left): Howard Hotson (Principal Investigator), Miranda Lewis,
+Matthew Wilcoxson, Arno Bosse, Philip Beeley, Ruth Ahnert
+(Co-Investigator), Sebastian Ahnert (Co-Investigator), Esther van
+Raamsdonk.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;Screenshot%202021-06-09%20at%2015.45.29.png&#34; alt=&#34;&#34;&gt;{width=&amp;ldquo;700&amp;rdquo;}&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;the-archival-and-network-turns&#34;&gt;The Archival and Network Turns&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The &amp;lsquo;archival turn&amp;rsquo;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A phrase used by historians to describe the practice in recent
+years to focus critical attention on archives themselves&lt;/li&gt;
+&lt;li&gt;Archives are &amp;lsquo;texts&amp;rsquo;, contain layers of interpretation, at each
+step (collection, cataloguing, digitisation and so forth)&lt;/li&gt;
+&lt;li&gt;Challenges notion of archives as repositories of historical
+material and archivists as neutral custodians (Ketalaar 2001)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ahnert et. al &lt;em&gt;The Network Turn&lt;/em&gt; (2020) argues that we live in a
+networked world; this conference is evidence that this is true of
+historical scholarship.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What do we get at the intersection of the two?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;::: {.notes}
+In recent years the idea of the &amp;lsquo;archival turn&amp;rsquo; has been used very
+frequently in historical scholarship. It&amp;rsquo;s a phrase used by historicans
+to describe the practice of focusing critical attention on archives
+themselves. The basic idea is that archives are texts in their own
+right: they contain layers on interpretation at each step in their
+production (collection, cataloguing, digitisation and so forth). The
+archival turn challenges the notion of archives as simple repositories
+of historical material and archivigsts as neutral custodians: see for
+example the work of Eric Ketalaar. Another &amp;lsquo;turn&amp;rsquo; in the humanities is a
+networked one: see for example the recent book &amp;lsquo;the networked turn by
+Ahnert and others. What happens at the intersection of the two.
+:::&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;networks-and-archives&#34;&gt;Networks and Archives&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Historical Network Research: letter archives (correspondence data)
+used to uncover communication practices or make claims about social
+relations.&lt;/li&gt;
+&lt;li&gt;However often the networks reveal as much or more about archival
+biases and practices as they do these things&lt;/li&gt;
+&lt;li&gt;I suggest we can use networks to talk about archives in their own
+right&lt;/li&gt;
+&lt;li&gt;What can network analysis tell us about the &amp;lsquo;text&amp;rsquo; of archival
+processes?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;::: {.notes}
+Usually when we use networks on historical correspondence archives,
+we&amp;rsquo;re trying to understand communication practices, or make some claims
+about social relations and so forth. For example a project might look at
+a set of centrality measures to make a claim that a particular
+individual was the most-connected in a given historical network, or to
+find people who functions as bridges between separate clusters. But
+often what we find in fact says more about archival practices than it
+does historical realities: perhaps the individual who looks the most
+central just seems that way because they were the most diligent about
+keeping on to their letters, or because they happened to keep a copy of
+their outgoing correspondence.&lt;/p&gt;
+&lt;p&gt;I suggest that this facet of network analysis which can be frustating
+can be turned around. In this paper I&amp;rsquo;m going to talk about some of the
+ways in which network analysis can be a useful tool in understanding
+archives and their collection practices themselves.
+:::&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;outline-of-the-paper&#34;&gt;Outline of the paper&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Introduction to the &amp;lsquo;Networking Archives&amp;rsquo; project and the archives
+used&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Show some of the ways network analysis can be used to understand the
+shape and process of archives&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start with ways of looking for the overall shape&lt;/li&gt;
+&lt;li&gt;Move to more specific: what individual metrics tell us about
+archives&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finish with a more specific example of networks helping to find
+&amp;lsquo;new&amp;rsquo; information in archives&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;::: {.notes}
+:::&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;the-archives-used&#34;&gt;The Archives Used&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;EMLO:&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;A union of c.100 catalogues brought together to study the republic
+of letters (1500-1800 but focus in 17th century)&lt;/li&gt;
+&lt;li&gt;Based on variety of sources, mostly printed editions but some from
+manuscript&lt;/li&gt;
+&lt;li&gt;In general catalogues are &amp;lsquo;ego networks:&amp;rsquo; built around a static
+individual at the centre of a network.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SPO:&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Digitised Calendars of scans of the State Papers from Britain and
+Ireland, Tudor and Stuart Periods (1509 - 1714)&lt;/li&gt;
+&lt;li&gt;Individual secretaries often viewed their official documents as
+&amp;lsquo;private&amp;rsquo; and kept them as their possessions on leaving office:e.g.
+Conway Papers were only returned to the office in the 19th century&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;the-archives-used-1&#34;&gt;The Archives Used&lt;/h2&gt;
+&lt;p&gt;::: {.columns-2}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When merged they make a large network of approximately 70,000 nodes
+and 120,000 edges, over 300 years.&lt;/li&gt;
+&lt;li&gt;The result is a &amp;lsquo;hairbrush&amp;rsquo; force-directed diagram:
+&lt;ul&gt;
+&lt;li&gt;Tudor and Stuart connected to each other by a short edge: the &amp;lsquo;handle&amp;rsquo; with early 16th century on one end and late 17th on the other.&lt;/li&gt;
+&lt;li&gt;EMLO and Stuart more focused on the 17th century and share more connections.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;library(tidyverse)
+library(data.table)
+library(tidytable)
+library(tidygraph)
+library(igraph)
+library(ggraph)
+library(ForceAtlas2)
+library(snakecase)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;
+universal_network = fread(&#39;/Users/Yann/Documents/non-Github/universal_network/universal_network.csv&#39;)
+# layout = universal_network %&amp;gt;% distinct.(Source, Target, data) %&amp;gt;% graph_from_data_frame(directed = T) %&amp;gt;% as_tbl_graph()   mutate(degree = centrality_degree( mode = &#39;total&#39;)) %&amp;gt;%   arrange(desc(degree)) %&amp;gt;% filter(degree&amp;gt;100) %&amp;gt;% mutate(component = group_components()) %&amp;gt;% filter(component==1) %&amp;gt;%
+#   layout.forceatlas2(directed=FALSE, iterations = 1000, plotstep = 0)
+
+universal_network %&amp;gt;% distinct.(Source, Target, data) %&amp;gt;% 
+  graph_from_data_frame(directed = T) %&amp;gt;% 
+  as_tbl_graph() %&amp;gt;% 
+  mutate(degree = centrality_degree( mode = &#39;total&#39;)) %&amp;gt;% 
+  arrange(desc(degree)) %&amp;gt;% 
+  filter(degree&amp;gt;30) %&amp;gt;%
+  mutate(component = group_components()) %&amp;gt;%
+  filter(component==1)%&amp;gt;% ggraph(&#39;nicely&#39;) + 
+  geom_edge_link(aes(color = data), alpha = .2) +
+  geom_node_point(aes(size  = degree), pch = 21, fill = &#39;white&#39;,color = &#39;black&#39;, stroke = .5) + 
+  theme_void() + 
+  scale_size_area() + theme(legend.position = &#39;none&#39;) + labs(color = NULL) + scale_x_continuous(expand = c(.2,.2))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;:::&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;using-na-to-understand-the-overall-shape-of-the-archives&#34;&gt;Using NA to understand the overall shape of the archives&lt;/h2&gt;
+&lt;p&gt;::: {.columns-2}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Most basic analysis of these archives is to plot the degree
+distribution&lt;/li&gt;
+&lt;li&gt;Strikingly similar in all cases, despite very different origins of
+EMLO and SPO.&lt;/li&gt;
+&lt;li&gt;Implications for how we think about the archives: in all cases
+centred around a few &amp;lsquo;elite&amp;rsquo; hubs:&lt;/li&gt;
+&lt;li&gt;Secretaries of State for SPO, and the figures at the centre of
+catalogues for EMLO&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;emlo = universal_network %&amp;gt;% filter(data == &#39;emlo&#39;) %&amp;gt;% distinct.(Source, Target) %&amp;gt;% graph_from_data_frame() %&amp;gt;% as_tbl_graph() %&amp;gt;% mutate(degree = centrality_degree(mode = &#39;total&#39;)) %&amp;gt;% as_tibble() %&amp;gt;% count.(degree, name = &#39;n&#39;) %&amp;gt;% mutate(source = &#39;emlo&#39;)
+
+stuart = universal_network %&amp;gt;% filter(data == &#39;stuart&#39;) %&amp;gt;% distinct.(Source, Target) %&amp;gt;% graph_from_data_frame() %&amp;gt;% as_tbl_graph() %&amp;gt;% mutate(degree = centrality_degree(mode = &#39;total&#39;)) %&amp;gt;% as_tibble() %&amp;gt;% count.(degree, name = &#39;n&#39;)%&amp;gt;% mutate(source = &#39;stuart&#39;)
+
+tudor = universal_network %&amp;gt;% filter(data == &#39;tudor&#39;) %&amp;gt;% distinct.(Source, Target) %&amp;gt;% graph_from_data_frame() %&amp;gt;% as_tbl_graph() %&amp;gt;% mutate(degree = centrality_degree(mode = &#39;total&#39;)) %&amp;gt;% as_tibble() %&amp;gt;% count.(degree, name = &#39;n&#39;)%&amp;gt;% mutate(source = &#39;tudor&#39;)
+
+
+ 
+  ggplot(data = rbind(emlo, stuart, tudor)) + geom_point(aes(x = degree, y = n))+
+  scale_x_continuous(
+                     trans = &amp;quot;log10&amp;quot;) +
+  scale_y_continuous(
+                     trans = &amp;quot;log10&amp;quot;) + facet_wrap(~source, ncol = 2) + theme_bw()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;:::&lt;/p&gt;
+&lt;h2 id=&#34;catalogue-analysis&#34;&gt;Catalogue Analysis&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Created a network where each catalogue is a node, with an edge
+between them weighted on how many individuals shared by both&lt;/li&gt;
+&lt;li&gt;Result is a densely connected network which can show how each
+catalogue relates to each other&lt;/li&gt;
+&lt;li&gt;Three &amp;lsquo;core&amp;rsquo; catalogues, State Papers Stuart, State Papers Tudor,
+Bodleian card catalogue&lt;/li&gt;
+&lt;li&gt;Visualisation shows some surprising connections, such as the strong
+overlap between Robert Boyle, Constantijn Huygens and the English
+State Papers.&lt;/li&gt;
+&lt;li&gt;Others on the &amp;lsquo;outside&amp;rsquo;: Johan de Witt, Athanasius Kircher, despite
+large collections are &amp;lsquo;separate&amp;rsquo; to the &amp;lsquo;core&amp;rsquo; of EMLO and State
+Papers. Different networks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;catalogue-analysis-1&#34;&gt;Catalogue Analysis&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;library(reshape2)
+
+library(lubridate)
+
+location &amp;lt;- read_csv(&amp;quot;/Users/Yann/Documents/GitHub/Book-Chapters/Communities in Space/data/location.csv&amp;quot;, col_types = cols(.default = &amp;quot;c&amp;quot;))
+person &amp;lt;- read_csv(&amp;quot;/Users/Yann/Documents/GitHub/Book-Chapters/Communities in Space/data/person.csv&amp;quot;, col_types = cols(.default = &amp;quot;c&amp;quot;))
+work &amp;lt;- read_csv(&amp;quot;/Users/Yann/Documents/GitHub/Book-Chapters/Communities in Space/data/work.csv&amp;quot;, col_types = cols(.default = &amp;quot;c&amp;quot;))
+
+colnames(location) = to_snake_case(colnames(location))
+colnames(person) = to_snake_case(colnames(person))
+colnames(work) = to_snake_case(colnames(work))
+
+emlo_network = read_delim(&#39;/Users/Yann/Documents/GitHub/Book-Chapters/Communities in Space/data/emlo_full_network.dat&#39;, delim = &#39;\t&#39;, col_names = F, col_types = cols(.default = &amp;quot;c&amp;quot;))
+
+unknowns = read_csv(&#39;https://raw.githubusercontent.com/networkingarchives/de-duplications/master/to_remove_list_with_unknown.csv&#39;)
+
+df = universal_network %&amp;gt;% filter(! X5 %in% unknowns$value) %&amp;gt;% 
+  left_join(work %&amp;gt;% 
+              dplyr::select(emlo_letter_id_number, original_catalogue_name), by = c(&#39;X5&#39; = &#39;emlo_letter_id_number&#39;), na_matches = &#39;never&#39;) %&amp;gt;% mutate(original_catalogue_name = coalesce(original_catalogue_name, data)) %&amp;gt;% mutate(original_catalogue_name = ifelse(original_catalogue_name == &#39;tudor&#39;, &#39;Tudor State Papers&#39;,
+                                                                                                                                                                                                                                           ifelse(original_catalogue_name == &#39;stuart&#39;, &#39;Stuart State Papers&#39;, original_catalogue_name))) %&amp;gt;% filter(!str_detect(original_catalogue_name, &amp;quot;(?i)TEST&amp;quot;))
+
+list_of_cats = unique(df$original_catalogue_name)
+l = list()
+for(cat in list_of_cats){
+  
+  allnodes = df %&amp;gt;% 
+    filter(original_catalogue_name == cat) %&amp;gt;% 
+    distinct(Source, Target) %&amp;gt;% 
+    graph_from_data_frame() %&amp;gt;% V()
+  
+  names(allnodes)
+  
+  l[[cat]] = names(allnodes)
+  
+}
+
+
+nms &amp;lt;- combn( names(l) , 2 , FUN = paste0 , collapse = &amp;quot;|&amp;quot; , simplify = FALSE )
+
+# Make the combinations of list elements
+ll &amp;lt;- combn( l , 2 , simplify = FALSE )
+
+# Intersect the list elements
+out &amp;lt;- lapply( ll , function(x) length( intersect( x[[1]] , x[[2]] ) ) )
+
+# Output with names
+overlap = setNames( out , nms ) %&amp;gt;% as_tibble() %&amp;gt;% pivot_longer(names_to = &#39;names&#39;, values_to = &#39;value&#39;, cols = everything()) %&amp;gt;% separate(names, into = c(&#39;name1&#39;, &#39;name2&#39;), sep = &#39;\\|&#39;)
+
+library(ForceAtlas2)
+
+totals = df %&amp;gt;% distinct(X5, .keep_all = T) %&amp;gt;% group_by(original_catalogue_name) %&amp;gt;% tally()
+  
+ g =  overlap %&amp;gt;% 
+  rename(weight = value) %&amp;gt;% 
+  graph_from_data_frame(directed = T) %&amp;gt;% 
+  as_tbl_graph() %&amp;gt;% 
+  mutate(degree = centrality_degree(weights = weight, mode = &#39;total&#39;)) %&amp;gt;% 
+  activate(edges) %&amp;gt;% 
+  #filter(weight &amp;gt;1) %&amp;gt;% 
+  activate(nodes) %&amp;gt;% 
+  mutate(comp = group_components()) %&amp;gt;% 
+  filter(comp ==1) %&amp;gt;% left_join(totals, by=c(&#39;name&#39; = &#39;original_catalogue_name&#39;)) 
+  
+df_g = overlap %&amp;gt;% 
+  rename(weight = value) %&amp;gt;% 
+  graph_from_data_frame(directed = T) %&amp;gt;% 
+  as_tbl_graph() %&amp;gt;% 
+  mutate(degree = centrality_degree(weights = weight, mode = &#39;total&#39;)) %&amp;gt;% 
+  activate(edges) %&amp;gt;% 
+ # filter(weight &amp;gt;1) %&amp;gt;% 
+  activate(nodes) %&amp;gt;% 
+  mutate(comp = group_components()) %&amp;gt;% 
+  filter(comp ==1) %&amp;gt;% left_join(totals, by=c(&#39;name&#39; = &#39;original_catalogue_name&#39;)) %&amp;gt;% activate(edges) %&amp;gt;% as_tibble()
+
+layout = layout.forceatlas2(df_g, plotstep = 0, gravity = 1, nohubs = F, linlog = F, k =10000)
+
+
+ p = ggraph(graph = g, layout = layout %&amp;gt;% select(-name) %&amp;gt;%  rename(x = V1, y = V2))  + 
+  geom_edge_arc(aes(width = weight), alpha = .5, strength = .1) + 
+  geom_node_point(aes(size = n), pch = 21, fill = &#39;white&#39;, color = &#39;black&#39;) + 
+  geom_node_text(aes(label = name),size = 1.8, repel = T, segment.alpha = .2) + 
+   scale_size_area(max_size = 15) + 
+   scale_edge_width_continuous(range = c(.00001, 3)) + 
+   theme_void() + theme(legend.position = &#39;bottom&#39;) + labs(size = &#39;Number of Letters&#39;)
+ 
+p
+ 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;catalogue-analysis-using-in-and-out-degree&#34;&gt;Catalogue Analysis using in and out-degree&lt;/h2&gt;
+&lt;p&gt;::: {.columns-2}
+High in-degree:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;library(kableExtra)
+catalogues = fread(&#39;catalogues&#39;) %&amp;gt;% mutate(catalogue = trimws(catalogue, which = &#39;both&#39;))%&amp;gt;% mutate(emlo_id = trimws(emlo_id, which = &#39;both&#39;))
+
+
+options(&amp;quot;kableExtra.html.bsTable&amp;quot; = T)
+
+emlo_network %&amp;gt;% 
+  count.(X1, X2, name = &#39;weight&#39;) %&amp;gt;% 
+  graph_from_data_frame() %&amp;gt;% 
+  as_tbl_graph() %&amp;gt;%
+  mutate(in_degree = centrality_degree(mode = &#39;in&#39;, weights = weight)) %&amp;gt;% 
+    mutate(out_degree = centrality_degree(mode = &#39;out&#39;, weights = weight)) %&amp;gt;% 
+  as_tibble() %&amp;gt;% 
+  inner_join.(catalogues, by = c(&#39;name&#39; = &#39;emlo_id&#39;)) %&amp;gt;% 
+  arrange(desc(in_degree)) %&amp;gt;% head(10) %&amp;gt;% 
+  select.(-name, Catalogue = catalogue, `In-Degree`= in_degree, `Out-degree` = out_degree) %&amp;gt;%
+  kbl(&amp;quot;html&amp;quot;, table.attr = &amp;quot;style = \&amp;quot;color: black;\&amp;quot;&amp;quot;) %&amp;gt;%
+  kable_styling(font_size = 10, bootstrap_options = c(&amp;quot;striped&amp;quot;, &#39;hover&#39;, full_width = F))
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;High out-degree:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;library(kableExtra)
+
+options(&amp;quot;kableExtra.html.bsTable&amp;quot; = T)
+
+emlo_network %&amp;gt;% 
+  count.(X1, X2, name = &#39;weight&#39;) %&amp;gt;% 
+  graph_from_data_frame() %&amp;gt;% 
+  as_tbl_graph() %&amp;gt;%
+  mutate(in_degree = centrality_degree(mode = &#39;in&#39;, weights = weight))%&amp;gt;%
+  mutate(out_degree = centrality_degree(mode = &#39;out&#39;, weights = weight)) %&amp;gt;% 
+  as_tibble() %&amp;gt;% 
+   inner_join.(catalogues, by = c(&#39;name&#39; = &#39;emlo_id&#39;)) %&amp;gt;% 
+  arrange(desc(out_degree)) %&amp;gt;% head(10) %&amp;gt;% select.(-name, Catalogue = catalogue, `Out-Degree`= out_degree, `In-degree` = in_degree) %&amp;gt;%
+  kbl(&amp;quot;html&amp;quot;, table.attr = &amp;quot;style = \&amp;quot;color: black;\&amp;quot;&amp;quot;) %&amp;gt;%
+  kable_styling(font_size = 10, bootstrap_options = c(&amp;quot;striped&amp;quot;, &#39;hover&#39;, full_width = F))
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;:::&lt;/p&gt;
+&lt;h2 id=&#34;catalogue-analysis-using-in-and-out-degree-1&#34;&gt;Catalogue Analysis using in and out-degree&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Simple metrics such as in and out-degree allow us to quickly
+understand the shape of various archives:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;High in-degree, low out degree: Figures such as de Witt, a
+personal archive of collected letters: a &amp;lsquo;true&amp;rsquo; archive as we
+might imagine it.&lt;/li&gt;
+&lt;li&gt;High out-degree, low in-degree: for example Françoise de
+Graffigny (1695&amp;ndash;1758), archive of her collected and reassembled
+correspondence&lt;/li&gt;
+&lt;li&gt;Balance of both: tend to be reassembled collections, often based
+on printed editions or proejcts such as Constantijn Huygens
+(1596-1687) and Henry Oldenburg (1619-1677)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;archives-and-closeness-centrality&#34;&gt;Archives and &amp;lsquo;closeness centrality&amp;rsquo;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Nodes with a high closeness score have a short distance to all other
+nodes (the inverse of the average distance to all other nodes)&lt;/li&gt;
+&lt;li&gt;In a series of connected archives, can tell which are more
+&amp;lsquo;embedded&amp;rsquo; at the centre, and which at the periphery&lt;/li&gt;
+&lt;li&gt;Closeness is very related to degree: to find outliers, each archive
+in EMLO was ranked for closeness centrality and plotted against
+degree rank&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;archives-and-closeness-centrality-1&#34;&gt;Archives and &amp;lsquo;closeness centrality&amp;rsquo;&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;library(ggrepel)
+close = emlo_network %&amp;gt;% 
+  count.(X1, X2, name = &#39;weight&#39;) %&amp;gt;% 
+  graph_from_data_frame(directed = F) %&amp;gt;% 
+  as_tbl_graph() %&amp;gt;% 
+  mutate(degree = centrality_degree(mode = &#39;total&#39;))  %&amp;gt;%
+  mutate(closeness = centrality_closeness(mode = &#39;total&#39;)) %&amp;gt;% 
+  as_tibble() %&amp;gt;% 
+   inner_join.(catalogues, by = c(&#39;name&#39; = &#39;emlo_id&#39;)) %&amp;gt;%  
+  mutate(rank_closeness = rank(-closeness)) 
+
+  ggplot(data = close) + 
+  geom_point(aes(x = rank(-degree), y = rank_closeness)) + 
+  geom_text_repel(aes(x = rank(-degree), y = rank_closeness, label = catalogue), size = 2, segment.alpha = .5, segment.size= .2) + theme_bw()
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;archives-and-closeness-centrality-2&#34;&gt;Archives and &amp;lsquo;closeness centrality&amp;rsquo;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The results help to describe the catalogues even with very minimal
+knowledge of their content&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &amp;lsquo;centre&amp;rsquo; of EMLO is a group of mostly Dutch scholars&lt;/li&gt;
+&lt;li&gt;The archive of Athanasius Kircher is an anomaly: despite high
+degree, he is ranked lower than expected for closeness.&lt;/li&gt;
+&lt;li&gt;This tallies with our own knowledge: Kircher had a separate
+(though sometimes connected) network with the Republic of
+Letters. His inclusion in EMLO is an anomaly, separate to the
+core of its agenda.&lt;/li&gt;
+&lt;li&gt;On the other hand we have John Aubrey, whose closeness is
+surprisingly high for his degree: Aubrey was famously
+well-connected, member of the Royal Society, moved in both
+Royalist and Republican circles.&lt;/li&gt;
+&lt;li&gt;As new catalogues are added, can help to understand where they
+are situated, in a glance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;looking-for-intercepted-letters-in-disconnected-components&#34;&gt;Looking for intercepted letters in disconnected components&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The State Papers have a complicated history:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mostly the personal papers of individual secretaries of state&lt;/li&gt;
+&lt;li&gt;But also includes seized documents, intercepted papers, whole
+bunches of documents captured from ships (see also the Prize
+Papers)&lt;/li&gt;
+&lt;li&gt;Some simple tools from network analysis can also help to
+discover some of these&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disconnected-components&#34;&gt;Disconnected Components&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Most of the State Papers consists of one &amp;lsquo;giant component&amp;rsquo;: every
+node can reach every other&lt;/li&gt;
+&lt;li&gt;However there are some completely &amp;lsquo;disconnected&amp;rsquo; components&lt;/li&gt;
+&lt;li&gt;These make interesting starting-points for investigations&lt;/li&gt;
+&lt;li&gt;Many are intercepted or seized documents&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disconnected-components-1&#34;&gt;Disconnected Components&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;universal_network %&amp;gt;% 
+  filter(data %in% c(&#39;stuart&#39;, &#39;tudor&#39;)) %&amp;gt;%
+  distinct.(Source, Target) %&amp;gt;% 
+  graph_from_data_frame(directed = F) %&amp;gt;% 
+  as_tbl_graph() %&amp;gt;% 
+  mutate(component = group_components())%&amp;gt;% 
+  mutate(degree = centrality_degree(mode = &#39;total&#39;))%&amp;gt;% 
+  filter(component %in% 2:10|degree &amp;gt;30)%&amp;gt;%
+  ggraph(&#39;fr&#39;) + 
+  geom_edge_link(alpha = .1) + 
+  geom_node_point(aes(size = degree, fill = as.character(component)), pch = 21, stroke = .1) + 
+  theme_void() + theme(legend.position = &#39;none&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;disconnected-components-2&#34;&gt;Disconnected Components&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;universal_people = fread(&#39;/Users/Yann/Documents/non-Github/universal_network/universal_people.csv&#39;)
+universal_network %&amp;gt;% 
+  filter(data %in% c(&#39;stuart&#39;, &#39;tudor&#39;)) %&amp;gt;%
+  distinct.(Source, Target) %&amp;gt;% 
+  graph_from_data_frame(directed = F) %&amp;gt;% 
+  as_tbl_graph() %&amp;gt;% 
+  mutate(component = group_components())%&amp;gt;% 
+  mutate(degree = centrality_degree(mode = &#39;total&#39;))%&amp;gt;% 
+  filter(component %in% 2:20) %&amp;gt;% 
+  left_join(universal_people) %&amp;gt;%
+  ggraph(&#39;fr&#39;) + 
+  geom_edge_link() + 
+  geom_node_point(aes(size = degree), pch = 21, color = &#39;black&#39;, fill = &#39;white&#39;)+ 
+  geom_node_text(aes(label = ifelse(degree&amp;gt;3, main_name, NA)), repel = T, size =3) + 
+  theme_void() + theme(legend.position = &#39;none&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;disconnected-components-3&#34;&gt;Disconnected Components&lt;/h2&gt;
+&lt;p&gt;::: {.columns-2}&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Seized letters from Dr. Richard Smith, Roman Catholic Bishop&lt;/li&gt;
+&lt;li&gt;Warrant was issued for Smith&amp;rsquo;s arrest in 1628&lt;/li&gt;
+&lt;li&gt;He fled England for France, presumably when his letters were found
+and added to the State Papers&lt;/li&gt;
+&lt;li&gt;A secretary or clerk has added &amp;lsquo;Papist&amp;rsquo; when filing, indicating
+these were suspect communications&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt; &lt;br&gt; &lt;br&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-{r&#34;&gt;universal_network %&amp;gt;% 
+  filter(data %in% c(&#39;stuart&#39;, &#39;tudor&#39;)) %&amp;gt;%
+  distinct.(Source, Target) %&amp;gt;% 
+  graph_from_data_frame(directed = F) %&amp;gt;% 
+  as_tbl_graph() %&amp;gt;% 
+  mutate(component = group_components())%&amp;gt;% 
+  mutate(degree = centrality_degree(mode = &#39;total&#39;))%&amp;gt;% 
+  filter(component ==8) %&amp;gt;% 
+  left_join(universal_people) %&amp;gt;%
+  ggraph(&#39;fr&#39;) + 
+  geom_edge_link() + 
+  geom_node_point(aes(size = degree), pch = 21, color = &#39;black&#39;, fill = &#39;white&#39;)+ 
+  geom_node_text(aes(label = main_name), repel = T, size =3) + 
+  theme_void() + theme(legend.position = &#39;none&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;:::&lt;/p&gt;
+&lt;h2 id=&#34;disconnected-components-4&#34;&gt;Disconnected Components&lt;/h2&gt;
+&lt;p&gt;::: {.columns-2}
+&lt;img src=&#34;Screenshot%202021-06-09%20at%2014.50.01.png&#34; alt=&#34;&#34;&gt;{width=&amp;ldquo;350&amp;rdquo;}&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;Screenshot%202021-06-09%20at%2014.45.52.png&#34; alt=&#34;&#34;&gt;{width=&amp;ldquo;350&amp;rdquo;}
+:::&lt;/p&gt;
+&lt;h2 id=&#34;disconnected-components-5&#34;&gt;Disconnected Components&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;Screenshot%202021-06-09%20at%2014.45.45.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;conclusions&#34;&gt;Conclusions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;NA based on historical archives often tells us more about collection
+than it does about communication practices (e.g a particular
+centrality might not reflect a node&amp;rsquo;s position but rather the way
+that archive has been collected and digitised)&lt;/li&gt;
+&lt;li&gt;This can be a positive thing if focus is shifted to archives
+themselves&lt;/li&gt;
+&lt;li&gt;If archives are texts, it follows that we can apply &amp;lsquo;distant
+reading&amp;rsquo; to them&lt;/li&gt;
+&lt;li&gt;Network analysis can help us understand what Eric Ketalaar calls the
+&amp;lsquo;tacit narratives of power and knowledge&amp;rsquo; found in archives&lt;/li&gt;
+&lt;li&gt;If archives are &amp;lsquo;texts&amp;rsquo;, then it follows that we can apply &amp;lsquo;distant
+reading&amp;rsquo; to them&lt;/li&gt;
+&lt;li&gt;Help to understand their formation as active objects rather than
+passive silos of information&lt;/li&gt;
+&lt;li&gt;As more archives are merged this can help to understand differences
+between them&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
