@@ -3748,7 +3748,7 @@ james_network = spo_raw %&amp;gt;% filter(X1 %in% spo_ids$id &amp;amp; X2 %in% s
     </item>
     
     <item>
-      <title>Temporal Clusters Browswer</title>
+      <title>Temporal Clusters Browser</title>
       <link>https://yann-ryan.github.io/project/temporal-clusters/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       <guid>https://yann-ryan.github.io/project/temporal-clusters/</guid>
