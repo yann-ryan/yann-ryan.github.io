@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Networks | Yann Ryan</title>
+    <title>networks | Yann Ryan</title>
     <link>https://yann-ryan.github.io/tag/networks/</link>
       <atom:link href="https://yann-ryan.github.io/tag/networks/index.xml" rel="self" type="application/rss+xml" />
-    <description>Networks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 21 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <description>networks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://yann-ryan.github.io/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_512x512_fill_lanczos_center_2.png</url>
-      <title>Networks</title>
+      <title>networks</title>
       <link>https://yann-ryan.github.io/tag/networks/</link>
     </image>
+    
+    <item>
+      <title>The Measure of the Archive: The Robustness of Network Analysis in Early Modern Correspondence</title>
+      <link>https://yann-ryan.github.io/publication/ca_robustness/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/publication/ca_robustness/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>More Difficult from Dublin than from Dieppe’: Ireland and Britain in a European Network of Communication</title>

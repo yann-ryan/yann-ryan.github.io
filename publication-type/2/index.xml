@@ -5,12 +5,20 @@
     <link>https://yann-ryan.github.io/publication-type/2/</link>
       <atom:link href="https://yann-ryan.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 09 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://yann-ryan.github.io/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_512x512_fill_lanczos_center_2.png</url>
       <title>2</title>
       <link>https://yann-ryan.github.io/publication-type/2/</link>
     </image>
+    
+    <item>
+      <title>The Measure of the Archive: The Robustness of Network Analysis in Early Modern Correspondence</title>
+      <link>https://yann-ryan.github.io/publication/ca_robustness/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/publication/ca_robustness/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Converting the British Library’s Catalogue of British and Irish Newspapers into a Public Domain Dataset: Processes and Applications</title>

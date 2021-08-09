@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Recent early modern news histories have tended to emphasise the international scope of the networks on which news travelled. New techniques, falling under the umbrella term ‘digital humanities’, allow for the examination of news as a complete network, and this article explores the ways in which, using these techniques, the connections between Ireland and Britain can be thought of as not only local, peripheral and bilateral but also within a larger, European news system. Using network science, originally developed for the analysis of the World Wide Web, this article shows that the European system has universal network properties:it is scale-free, divided into clusters and exhibits the ‘small world’ phenomenon, explaining its resilience to interruption and the relative efficiency of early modern information transfer." />
+  <meta name="description" content="Network analysis of historical correspondence can be a fruitful way to address historical research questions, and has been increasingly used in historical studies over the past decade. As with many areas of quantitative humanities research, the reliability of the results are often called into question, given that such approaches require ’hard data’ as input, yet almost inevitably use datasets with partial or missing records. Other disciplines using network analysis have conducted robustness experiments designed to test the impact of data loss or error on their results. In order to test how this missing data might affect our own area of research, we conducted a number of experiments designed to simulate the impact of the kinds of loss often seen in historical correspondence data, including random document loss, missing years, and errors in the disambiguation and de-duplication process. The results show that most network centrality measures maintain robustness until a very large proportion of the data (60% or more) is removed. Some measures showed a linear change in robustness, while others remained high and then fell off sharply. Only one, transitivity (local clustering coefficient) was significantly impacted throughout. We tested a range of data loss scenarios (random single letters, folio books of manuscript letters, catalogues, and entire years) and a range of commonly-used network metrics. In addition, we tested the robustness of more complex network analysis results in the literature that combine several network metrics to highlight individuals in the network, and found that the same types of individuals would have likely been highlighted even with 50% random letter loss. Alongside the article is a web application, built using Shiny, which will calculate robustness measures for a user-uploaded network dataset. We conclude that researchers working with similar historical correspondence datasets might be able to consider network analysis results to be robust in most cases, rather than work on the assumption that missing data would lead to very different findings or results" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://yann-ryan.github.io/publication/journal-article/" />
+  <link rel="alternate" hreflang="en-us" href="https://yann-ryan.github.io/publication/ca_robustness/" />
 
   
 
@@ -273,7 +273,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_32x32_fill_lanczos_center_2.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="https://yann-ryan.github.io/publication/journal-article/" />
+  <link rel="canonical" href="https://yann-ryan.github.io/publication/ca_robustness/" />
 
   
   
@@ -289,18 +289,18 @@
   <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Yann Ryan" />
-  <meta property="og:url" content="https://yann-ryan.github.io/publication/journal-article/" />
-  <meta property="og:title" content="More Difficult from Dublin than from Dieppe’: Ireland and Britain in a European Network of Communication | Yann Ryan" />
-  <meta property="og:description" content="Recent early modern news histories have tended to emphasise the international scope of the networks on which news travelled. New techniques, falling under the umbrella term ‘digital humanities’, allow for the examination of news as a complete network, and this article explores the ways in which, using these techniques, the connections between Ireland and Britain can be thought of as not only local, peripheral and bilateral but also within a larger, European news system. Using network science, originally developed for the analysis of the World Wide Web, this article shows that the European system has universal network properties:it is scale-free, divided into clusters and exhibits the ‘small world’ phenomenon, explaining its resilience to interruption and the relative efficiency of early modern information transfer." /><meta property="og:image" content="https://yann-ryan.github.io/publication/journal-article/featured.jpg" />
-    <meta property="twitter:image" content="https://yann-ryan.github.io/publication/journal-article/featured.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="https://yann-ryan.github.io/publication/ca_robustness/" />
+  <meta property="og:title" content="The Measure of the Archive: The Robustness of Network Analysis in Early Modern Correspondence | Yann Ryan" />
+  <meta property="og:description" content="Network analysis of historical correspondence can be a fruitful way to address historical research questions, and has been increasingly used in historical studies over the past decade. As with many areas of quantitative humanities research, the reliability of the results are often called into question, given that such approaches require ’hard data’ as input, yet almost inevitably use datasets with partial or missing records. Other disciplines using network analysis have conducted robustness experiments designed to test the impact of data loss or error on their results. In order to test how this missing data might affect our own area of research, we conducted a number of experiments designed to simulate the impact of the kinds of loss often seen in historical correspondence data, including random document loss, missing years, and errors in the disambiguation and de-duplication process. The results show that most network centrality measures maintain robustness until a very large proportion of the data (60% or more) is removed. Some measures showed a linear change in robustness, while others remained high and then fell off sharply. Only one, transitivity (local clustering coefficient) was significantly impacted throughout. We tested a range of data loss scenarios (random single letters, folio books of manuscript letters, catalogues, and entire years) and a range of commonly-used network metrics. In addition, we tested the robustness of more complex network analysis results in the literature that combine several network metrics to highlight individuals in the network, and found that the same types of individuals would have likely been highlighted even with 50% random letter loss. Alongside the article is a web application, built using Shiny, which will calculate robustness measures for a user-uploaded network dataset. We conclude that researchers working with similar historical correspondence datasets might be able to consider network analysis results to be robust in most cases, rather than work on the assumption that missing data would lead to very different findings or results" /><meta property="og:image" content="https://yann-ryan.github.io/publication/ca_robustness/featured.png" />
+    <meta property="twitter:image" content="https://yann-ryan.github.io/publication/ca_robustness/featured.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2018-06-21T00:00:00&#43;00:00"
+        content="2021-07-21T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2018-06-21T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-08-09T00:00:00&#43;00:00">
   
 
   
@@ -322,16 +322,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://yann-ryan.github.io/publication/journal-article/"
+    "@id": "https://yann-ryan.github.io/publication/ca_robustness/"
   },
-  "headline": "More Difficult from Dublin than from Dieppe’: Ireland and Britain in a European Network of Communication",
+  "headline": "The Measure of the Archive: The Robustness of Network Analysis in Early Modern Correspondence",
   
   "image": [
-    "https://yann-ryan.github.io/publication/journal-article/featured.jpg"
+    "https://yann-ryan.github.io/publication/ca_robustness/featured.png"
   ],
   
-  "datePublished": "2018-06-21T00:00:00Z",
-  "dateModified": "2018-06-21T00:00:00Z",
+  "datePublished": "2021-07-21T00:00:00Z",
+  "dateModified": "2021-08-09T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -346,7 +346,7 @@
       "url": "https://yann-ryan.github.io/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Recent early modern news histories have tended to emphasise the international scope of the networks on which news travelled. New techniques, falling under the umbrella term ‘digital humanities’, allow for the examination of news as a complete network, and this article explores the ways in which, using these techniques, the connections between Ireland and Britain can be thought of as not only local, peripheral and bilateral but also within a larger, European news system. Using network science, originally developed for the analysis of the World Wide Web, this article shows that the European system has universal network properties:it is scale-free, divided into clusters and exhibits the ‘small world’ phenomenon, explaining its resilience to interruption and the relative efficiency of early modern information transfer."
+  "description": "Network analysis of historical correspondence can be a fruitful way to address historical research questions, and has been increasingly used in historical studies over the past decade. As with many areas of quantitative humanities research, the reliability of the results are often called into question, given that such approaches require ’hard data’ as input, yet almost inevitably use datasets with partial or missing records. Other disciplines using network analysis have conducted robustness experiments designed to test the impact of data loss or error on their results. In order to test how this missing data might affect our own area of research, we conducted a number of experiments designed to simulate the impact of the kinds of loss often seen in historical correspondence data, including random document loss, missing years, and errors in the disambiguation and de-duplication process. The results show that most network centrality measures maintain robustness until a very large proportion of the data (60% or more) is removed. Some measures showed a linear change in robustness, while others remained high and then fell off sharply. Only one, transitivity (local clustering coefficient) was significantly impacted throughout. We tested a range of data loss scenarios (random single letters, folio books of manuscript letters, catalogues, and entire years) and a range of commonly-used network metrics. In addition, we tested the robustness of more complex network analysis results in the literature that combine several network metrics to highlight individuals in the network, and found that the same types of individuals would have likely been highlighted even with 50% random letter loss. Alongside the article is a web application, built using Shiny, which will calculate robustness measures for a user-uploaded network dataset. We conclude that researchers working with similar historical correspondence datasets might be able to consider network analysis results to be robust in most cases, rather than work on the assumption that missing data would lead to very different findings or results"
 }
 </script>
 
@@ -362,11 +362,11 @@
 
 
 
-  <title>More Difficult from Dublin than from Dieppe’: Ireland and Britain in a European Network of Communication | Yann Ryan</title>
+  <title>The Measure of the Archive: The Robustness of Network Analysis in Early Modern Correspondence | Yann Ryan</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="966884cc0d8ac9e31fab966c4534e973" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="1827350eadb885dd4b0fd324a8c411bf" >
 
   
   
@@ -784,7 +784,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>More Difficult from Dublin than from Dieppe’: Ireland and Britain in a European Network of Communication</h1>
+  <h1>The Measure of the Archive: The Robustness of Network Analysis in Early Modern Correspondence</h1>
 
   
 
@@ -812,7 +812,7 @@
     
       
     
-    June 2018
+    August 2021
   </span>
   
 
@@ -849,14 +849,38 @@
 
 
   
+    
+  
 
 
+
+<a class="btn btn-outline-primary btn-page-header" href="https://culturalanalytics.org/article/25943-the-measure-of-the-archive-the-ro-bustness-of-network-analysis-in-early-modern-correspondence" target="_blank" rel="noopener">
+  PDF
+</a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/journal-article/cite.bib">
+        data-filename="/publication/ca_robustness/cite.bib">
   Cite
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://github.com/networkingarchives/network_robustness_ca_article" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.7910/DVN/TF3Y0O" target="_blank" rel="noopener">
+  Dataset
 </a>
 
 
@@ -869,9 +893,7 @@
 
 
 
-
-
-<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/https://doi.org/10.1080/13688804.2018.1488585" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary btn-page-header" href="https://doi.org/10.22148/001c.25943" target="_blank" rel="noopener">
   DOI
 </a>
 
@@ -883,9 +905,9 @@
 </div>
 
 
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 436px;">
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 550px;">
   <div style="position: relative">
-    <img src="/publication/journal-article/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_214168_720x0_resize_q75_lanczos.jpg" alt="" class="featured-image">
+    <img src="/publication/ca_robustness/featured_hu017a025999f47efb2b086561b81babc7_211623_720x0_resize_lanczos_2.png" alt="" class="featured-image">
     
   </div>
 </div>
@@ -896,7 +918,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Recent early modern news histories have tended to emphasise the international scope of the networks on which news travelled. New techniques, falling under the umbrella term ‘digital humanities’, allow for the examination of news as a complete network, and this article explores the ways in which, using these techniques, the connections between Ireland and Britain can be thought of as not only local, peripheral and bilateral but also within a larger, European news system. Using network science, originally developed for the analysis of the World Wide Web, this article shows that the European system has universal network properties:it is scale-free, divided into clusters and exhibits the ‘small world’ phenomenon, explaining its resilience to interruption and the relative efficiency of early modern information transfer.</p>
+    <p class="pub-abstract">Network analysis of historical correspondence can be a fruitful way to address historical research questions, and has been increasingly used in historical studies over the past decade. As with many areas of quantitative humanities research, the reliability of the results are often called into question, given that such approaches require ’hard data’ as input, yet almost inevitably use datasets with partial or missing records. Other disciplines using network analysis have conducted robustness experiments designed to test the impact of data loss or error on their results. In order to test how this missing data might affect our own area of research, we conducted a number of experiments designed to simulate the impact of the kinds of loss often seen in historical correspondence data, including random document loss, missing years, and errors in the disambiguation and de-duplication process. The results show that most network centrality measures maintain robustness until a very large proportion of the data (60% or more) is removed. Some measures showed a linear change in robustness, while others remained high and then fell off sharply. Only one, transitivity (local clustering coefficient) was significantly impacted throughout. We tested a range of data loss scenarios (random single letters, folio books of manuscript letters, catalogues, and entire years) and a range of commonly-used network metrics. In addition, we tested the robustness of more complex network analysis results in the literature that combine several network metrics to highlight individuals in the network, and found that the same types of individuals would have likely been highlighted even with 50% random letter loss. Alongside the article is a web application, built using Shiny, which will calculate robustness measures for a user-uploaded network dataset. We conclude that researchers working with similar historical correspondence datasets might be able to consider network analysis results to be robust in most cases, rather than work on the assumption that missing data would lead to very different findings or results</p>
     
 
     
@@ -924,7 +946,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9"><em>Media History, 24</em> (3-4)</div>
+          <div class="col-12 col-md-9">Journal of Cultural Analytics</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -945,11 +967,9 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/news/">News</a>
+  <a class="badge badge-light" href="/tag/network-analysis/">network analysis</a>
   
-  <a class="badge badge-light" href="/tag/moderate-intelligencer/">Moderate Intelligencer</a>
-  
-  <a class="badge badge-light" href="/tag/ireland/">Ireland</a>
+  <a class="badge badge-light" href="/tag/archives/">archives</a>
   
   <a class="badge badge-light" href="/tag/networks/">networks</a>
   
@@ -968,7 +988,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://yann-ryan.github.io/publication/journal-article/&amp;text=More%20Difficult%20from%20Dublin%20than%20from%20Dieppe%e2%80%99:%20Ireland%20and%20Britain%20in%20a%20European%20Network%20of%20Communication" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://yann-ryan.github.io/publication/ca_robustness/&amp;text=The%20Measure%20of%20the%20Archive:%20The%20Robustness%20of%20Network%20Analysis%20in%20Early%20Modern%20Correspondence" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -981,7 +1001,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://yann-ryan.github.io/publication/journal-article/&amp;t=More%20Difficult%20from%20Dublin%20than%20from%20Dieppe%e2%80%99:%20Ireland%20and%20Britain%20in%20a%20European%20Network%20of%20Communication" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://yann-ryan.github.io/publication/ca_robustness/&amp;t=The%20Measure%20of%20the%20Archive:%20The%20Robustness%20of%20Network%20Analysis%20in%20Early%20Modern%20Correspondence" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -994,7 +1014,7 @@
       
       
       <li>
-        <a href="mailto:?subject=More%20Difficult%20from%20Dublin%20than%20from%20Dieppe%e2%80%99:%20Ireland%20and%20Britain%20in%20a%20European%20Network%20of%20Communication&amp;body=https://yann-ryan.github.io/publication/journal-article/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=The%20Measure%20of%20the%20Archive:%20The%20Robustness%20of%20Network%20Analysis%20in%20Early%20Modern%20Correspondence&amp;body=https://yann-ryan.github.io/publication/ca_robustness/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1007,7 +1027,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://yann-ryan.github.io/publication/journal-article/&amp;title=More%20Difficult%20from%20Dublin%20than%20from%20Dieppe%e2%80%99:%20Ireland%20and%20Britain%20in%20a%20European%20Network%20of%20Communication" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://yann-ryan.github.io/publication/ca_robustness/&amp;title=The%20Measure%20of%20the%20Archive:%20The%20Robustness%20of%20Network%20Analysis%20in%20Early%20Modern%20Correspondence" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1020,7 +1040,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=More%20Difficult%20from%20Dublin%20than%20from%20Dieppe%e2%80%99:%20Ireland%20and%20Britain%20in%20a%20European%20Network%20of%20Communication%20https://yann-ryan.github.io/publication/journal-article/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=The%20Measure%20of%20the%20Archive:%20The%20Robustness%20of%20Network%20Analysis%20in%20Early%20Modern%20Correspondence%20https://yann-ryan.github.io/publication/ca_robustness/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1033,7 +1053,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://yann-ryan.github.io/publication/journal-article/&amp;title=More%20Difficult%20from%20Dublin%20than%20from%20Dieppe%e2%80%99:%20Ireland%20and%20Britain%20in%20a%20European%20Network%20of%20Communication" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://yann-ryan.github.io/publication/ca_robustness/&amp;title=The%20Measure%20of%20the%20Archive:%20The%20Robustness%20of%20Network%20Analysis%20in%20Early%20Modern%20Correspondence" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1171,11 +1191,13 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/publication/world-jogges/">How the World Jogges: Interconnectedness Modularity and Virality in Seventeenth Century News</a></li>
+      <li><a href="/talk/distant-reading-large-correspondence-archives-using-networks/">Distant Reading Large Correspondence Archives Using Networks</a></li>
       
-      <li><a href="/publication/ca_robustness/">The Measure of the Archive: The Robustness of Network Analysis in Early Modern Correspondence</a></li>
+      <li><a href="/project/visual-search/">State Papers Visual Search</a></li>
       
-      <li><a href="/publication/title-list/">Converting the British Library’s Catalogue of British and Irish Newspapers into a Public Domain Dataset: Processes and Applications</a></li>
+      <li><a href="/project/temporal-clusters/">Temporal Clusters Browser</a></li>
+      
+      <li><a href="/publication/journal-article/">More Difficult from Dublin than from Dieppe’: Ireland and Britain in a European Network of Communication</a></li>
       
     </ul>
   </div>
