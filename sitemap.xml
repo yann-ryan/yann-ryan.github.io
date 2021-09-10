@@ -11,10 +11,34 @@
     <loc>https://yann-ryan.github.io/courses/example/stats/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://yann-ryan.github.io/tag/archive/</loc>
+    <lastmod>2021-09-08T13:05:58+02:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/tag/data/</loc>
+    <lastmod>2021-09-08T13:05:58+02:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/tag/gis/</loc>
+    <lastmod>2021-09-08T13:05:58+02:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/tag/newsletters/</loc>
+    <lastmod>2021-09-08T13:05:58+02:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/post/</loc>
+    <lastmod>2021-09-08T13:05:58+02:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/post/mentions-of-plague-in-the-state-papers/</loc>
+    <lastmod>2021-09-08T13:05:58+02:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/tags/</loc>
+    <lastmod>2021-09-08T13:05:58+02:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/</loc>
+    <lastmod>2021-09-08T13:05:58+02:00</lastmod>
+  </url><url>
     <loc>https://yann-ryan.github.io/publication-type/2/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yann-ryan.github.io/project/visual-search/</loc>
+    <loc>https://yann-ryan.github.io/project/newspaper_data_book/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/tag/archives/</loc>
@@ -41,13 +65,7 @@
     <loc>https://yann-ryan.github.io/publication/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yann-ryan.github.io/tags/</loc>
-    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://yann-ryan.github.io/publication/ca_robustness/</loc>
-    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yann-ryan.github.io/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/author/yann-ryan/</loc>
@@ -63,9 +81,6 @@
     <lastmod>2021-06-30T11:15:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/post/early-modern-routing-with-viabundus-and-sfnetworks/</loc>
-    <lastmod>2021-05-03T15:12:07+02:00</lastmod>
-  </url><url>
-    <loc>https://yann-ryan.github.io/post/</loc>
     <lastmod>2021-05-03T15:12:07+02:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/post/exploring-the-state-papers-with-word-embeddings/</loc>
@@ -89,7 +104,7 @@
     <loc>https://yann-ryan.github.io/project/ship-paths/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yann-ryan.github.io/project/newspaper_data_book/</loc>
+    <loc>https://yann-ryan.github.io/project/visual-search/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/project/temporal-clusters/</loc>
@@ -102,9 +117,6 @@
     <lastmod>2021-01-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/publication/title-list/</loc>
-    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yann-ryan.github.io/tag/data/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/tag/news/</loc>
