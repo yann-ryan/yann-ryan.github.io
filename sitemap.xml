@@ -11,6 +11,27 @@
     <loc>https://yann-ryan.github.io/courses/example/stats/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://yann-ryan.github.io/tag/helpers/</loc>
+    <lastmod>2021-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/project/corona-testers/</loc>
+    <lastmod>2021-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/post/new-project-google-sheets-data-annotator-built-with-shiny/</loc>
+    <lastmod>2021-09-21T11:47:04+02:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/post/</loc>
+    <lastmod>2021-09-21T11:47:04+02:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/project/</loc>
+    <lastmod>2021-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/tags/</loc>
+    <lastmod>2021-09-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://yann-ryan.github.io/</loc>
+    <lastmod>2021-09-21T11:47:04+02:00</lastmod>
+  </url><url>
     <loc>https://yann-ryan.github.io/tag/archive/</loc>
     <lastmod>2021-09-08T13:05:58+02:00</lastmod>
   </url><url>
@@ -23,16 +44,7 @@
     <loc>https://yann-ryan.github.io/tag/newsletters/</loc>
     <lastmod>2021-09-08T13:05:58+02:00</lastmod>
   </url><url>
-    <loc>https://yann-ryan.github.io/post/</loc>
-    <lastmod>2021-09-08T13:05:58+02:00</lastmod>
-  </url><url>
     <loc>https://yann-ryan.github.io/post/mentions-of-plague-in-the-state-papers/</loc>
-    <lastmod>2021-09-08T13:05:58+02:00</lastmod>
-  </url><url>
-    <loc>https://yann-ryan.github.io/tags/</loc>
-    <lastmod>2021-09-08T13:05:58+02:00</lastmod>
-  </url><url>
-    <loc>https://yann-ryan.github.io/</loc>
     <lastmod>2021-09-08T13:05:58+02:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/publication-type/2/</loc>
@@ -54,9 +66,6 @@
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/tag/networks/</loc>
-    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://yann-ryan.github.io/project/</loc>
     <lastmod>2021-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/publication_types/</loc>
@@ -143,13 +152,10 @@
     <loc>https://yann-ryan.github.io/tag/source-themes/</loc>
     <lastmod>2020-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yann-ryan.github.io/tag/helpers/</loc>
-    <lastmod>2020-10-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://yann-ryan.github.io/project/external-project/</loc>
     <lastmod>2020-10-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://yann-ryan.github.io/project/corona-testers/</loc>
+    <loc>https://yann-ryan.github.io/project/letter-annotator/</loc>
     <lastmod>2020-10-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://yann-ryan.github.io/publication/world-jogges/</loc>

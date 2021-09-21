@@ -5,12 +5,20 @@
     <link>https://yann-ryan.github.io/tag/helpers/</link>
       <atom:link href="https://yann-ryan.github.io/tag/helpers/index.xml" rel="self" type="application/rss+xml" />
     <description>helpers</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 21 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://yann-ryan.github.io/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_512x512_fill_lanczos_center_2.png</url>
       <title>helpers</title>
       <link>https://yann-ryan.github.io/tag/helpers/</link>
     </image>
+    
+    <item>
+      <title>Letter Annotator</title>
+      <link>https://yann-ryan.github.io/project/corona-testers/</link>
+      <pubDate>Tue, 21 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/project/corona-testers/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>State Papers Online Reference Creator</title>
@@ -22,9 +30,9 @@
     
     <item>
       <title>UK Coronavirus Test Providers Dashboard</title>
-      <link>https://yann-ryan.github.io/project/corona-testers/</link>
+      <link>https://yann-ryan.github.io/project/letter-annotator/</link>
       <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://yann-ryan.github.io/project/corona-testers/</guid>
+      <guid>https://yann-ryan.github.io/project/letter-annotator/</guid>
       <description></description>
     </item>
     

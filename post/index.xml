@@ -5,12 +5,31 @@
     <link>https://yann-ryan.github.io/post/</link>
       <atom:link href="https://yann-ryan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 08 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 21 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://yann-ryan.github.io/media/icon_hu64ff187e2bf2a73fa3d6999beaf50dc7_9262_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>https://yann-ryan.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>New Project: Google Sheets Data Annotator, Built with Shiny</title>
+      <link>https://yann-ryan.github.io/post/new-project-google-sheets-data-annotator-built-with-shiny/</link>
+      <pubDate>Tue, 21 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://yann-ryan.github.io/post/new-project-google-sheets-data-annotator-built-with-shiny/</guid>
+      <description>
+&lt;script src=&#34;https://yann-ryan.github.io/post/new-project-google-sheets-data-annotator-built-with-shiny/index.en_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;I’m currently undertaking a Folger &lt;a href=&#34;digital%20fellowship&#34;&gt;digital fellowship&lt;/a&gt;, looking at the &lt;a href=&#34;https://yann-ryan.github.io/post/mentions-of-plague-in-the-state-papers/&#34;&gt;media responses and strategies around pandemics in the seventeenth century&lt;/a&gt;. Part of the research involves identifying mentions of plague in the abstracts of the English State Papers. To do this quickly, I developed a simple application using Shiny. It provides a very simple interface which enables quickly going through and marking text data. You provide it with a google API key, a link to a shared Google sheet, and a spreadsheet of data you’d like to annotate, and it writes the results of each button press to a Google sheet. It includes a graphic display of records completed - hovering over a cell gives a preview of the text in that record.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;images/featured.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Screenshot of application&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;It’s not perfect, but it has some advantages over a fancier solution in that it is very easy to read and adjust the source code, multiple people can work on it remotely thanks to Google sheets, and because it uses Sheets, there’s no need to install or learn how to use pricey database servers.&lt;/p&gt;
+&lt;p&gt;There’s a demo &lt;a href=&#34;https://yannryan.shinyapps.io/annotator/&#34;&gt;here&lt;/a&gt;, but I recommend downloading the &lt;a href=&#34;https://github.com/yann-ryan/annotator&#34;&gt;Github repository&lt;/a&gt; and running it on your local machine. There’s also a readme with instructions on how to get it working.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Sickness Spreads: Reports of the Plague in the State Papers</title>
